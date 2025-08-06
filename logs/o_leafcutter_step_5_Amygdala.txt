@@ -1,0 +1,10 @@
+Preparing for visualisation
+Results to be saved in: ../leafcutter/covariates_results/step_5_Amygdala.Rdata 
+Using annotation at: ../leafcutter/covariates_results/gencode_hg38 
+Loading counts from ../leafcutter/covariates/leafcutter_perind_numers.counts.gz 
+Loading metadata from ../data/modSep_Amygdala_for_leafcutter.txt 
+Loading exons from ../leafcutter/covariates_results/gencode_hg38_all_exons.txt.gz 
+[1] "Annotating junctions"
+[1] "Preparing results"
+[1] "converting counts to ratios"
+[1] "creating PCA"

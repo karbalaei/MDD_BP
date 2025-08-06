@@ -1,0 +1,425 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+here() starts at /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+creating tables of clusters
+creating graphs of clusters
+
+Attaching package: ‘foreach’
+
+The following objects are masked from ‘package:purrr’:
+
+    accumulate, when
+
+
+Attaching package: ‘reshape2’
+
+The following object is masked from ‘package:tidyr’:
+
+    smiths
+
+
+Attaching package: ‘intervals’
+
+The following object is masked from ‘package:purrr’:
+
+    reduce
+
+The following object is masked from ‘package:tidyr’:
+
+    expand
+
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_10267_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_25386_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_68811_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_5703_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_21033_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_19704_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_66268_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_36171_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_40887_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_38813_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_60178_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_1394_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_61871_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_36113_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_8128_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_37747_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_58958_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_12049_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_43487_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_5949_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_11370_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_25373_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_29919_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_51177_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_60112_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_67633_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_12117_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_61408_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_56746_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_18007_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_19996_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_60051_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_27462_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_66656_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_55166_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_7249_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_7307_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_29523_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_10349_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_10647_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_3224_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_40067_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_42193_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_67047_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_48253_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_12090_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_14397_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_64872_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_22287_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_26929_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_56700_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_52944_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_15434_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_38625_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_8596_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_29258_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_68984_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_66920_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_69219_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_29749_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_52734_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_29335_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_44192_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_28301_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_40767_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_54881_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_39278_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_6235_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_36256_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_16304_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_13463_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_35838_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_38147_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_41745_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_54312_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_21887_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_63258_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_47097_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_15189_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_2211_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_38662_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_67293_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_17532_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_19433_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_68322_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_12827_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_22348_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_65443_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_13106_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_54306_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_34517_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_34738_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_16974_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_66422_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_1952_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_25694_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_52503_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_20561_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_16089_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_51404_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_10618_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_31603_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_46090_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_68675_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_43718_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_49091_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_40827_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_18694_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_3930_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_22096_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_6719_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_23889_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_31276_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_53375_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_20059_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_11505_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_27403_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_68508_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_4349_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_19520_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_28734_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_29312_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_38205_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_61284_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_57513_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/Amygdala/clu_34998_-_graph.pdf
+There were 50 or more warnings (use warnings() to see the first 50)
+creating graphs of genes
+gene name:MTCH2
+Processing chromosome: chr11 for gene: MTCH2
+gene name:SYP
+Processing chromosome: chrX for gene: SYP
+gene name:C1orf43
+Processing chromosome: chr1 for gene: C1orf43
+gene name:RPLP1
+Processing chromosome: chr15 for gene: RPLP1
+gene name:WDHD1
+Processing chromosome: chr14 for gene: WDHD1
+gene name:CBWD5
+Processing chromosome: chr9 for gene: CBWD5
+gene name:BIN1
+Processing chromosome: chr2 for gene: BIN1
+gene name:PRNP
+Processing chromosome: chr20 for gene: PRNP
+gene name:KIF5C
+Processing chromosome: chr2 for gene: KIF5C
+gene name:AVL9
+Processing chromosome: chr7 for gene: AVL9
+gene name:IFI44L
+Processing chromosome: chr1 for gene: IFI44L
+gene name:SARAF
+Processing chromosome: chr8 for gene: SARAF
+gene name:RPL23AP7
+Processing chromosome: chr2 for gene: RPL23AP7
+gene name:TIAL1
+Processing chromosome: chr10 for gene: TIAL1
+gene name:TMEM178A
+Processing chromosome: chr2 for gene: TMEM178A
+gene name:TMEM130
+Processing chromosome: chr7 for gene: TMEM130
+gene name:MS4A7
+Processing chromosome: chr11 for gene: MS4A7
+gene name:UFD1L
+Processing chromosome: chr22 for gene: UFD1L
+gene name:MPC2
+Processing chromosome: chr1 for gene: MPC2
+gene name:IGSF9B
+Processing chromosome: chr11 for gene: IGSF9B
+gene name:TPGS2
+Processing chromosome: chr18 for gene: TPGS2
+gene name:NKD2
+Processing chromosome: chr5 for gene: NKD2
+gene name:MPP6
+Processing chromosome: chr7 for gene: MPP6
+gene name:RGN
+Processing chromosome: chrX for gene: RGN
+gene name:POLR2G
+Processing chromosome: chr11 for gene: POLR2G
+gene name:SLC4A2
+Processing chromosome: chr7 for gene: SLC4A2
+gene name:BAK1
+Processing chromosome: chr6 for gene: BAK1
+gene name:MBNL2
+Processing chromosome: chr13 for gene: MBNL2
+gene name:GTF2A1
+Processing chromosome: chr14 for gene: GTF2A1
+gene name:AHR
+Processing chromosome: chr7 for gene: AHR
+gene name:GRB2
+Processing chromosome: chr17 for gene: GRB2
+gene name:ZNF189
+Processing chromosome: chr9 for gene: ZNF189
+gene name:GNMT
+Processing chromosome: chr6 for gene: GNMT
+gene name:EPC1
+Processing chromosome: chr10 for gene: EPC1
+gene name:HNRNPF
+Processing chromosome: chr10 for gene: HNRNPF
+gene name:RNF213
+Processing chromosome: chr17 for gene: RNF213
+gene name:MS4A6A
+Processing chromosome: chr11 for gene: MS4A6A
+gene name:CORO1B
+Processing chromosome: chr11 for gene: CORO1B
+gene name:GUK1
+Processing chromosome: chr1 for gene: GUK1
+gene name:ESF1
+Processing chromosome: chr20 for gene: ESF1
+gene name:NUP214
+Processing chromosome: chr9 for gene: NUP214
+gene name:RPL35A
+Processing chromosome: chr3 for gene: RPL35A
+gene name:MYRF
+Processing chromosome: chr11 for gene: MYRF
+gene name:FGD6
+Processing chromosome: chr12 for gene: FGD6
+gene name:ALDH1A1
+Processing chromosome: chr9 for gene: ALDH1A1
+gene name:MYO9A
+Processing chromosome: chr15 for gene: MYO9A
+gene name:UBTF
+Processing chromosome: chr17 for gene: UBTF
+gene name:TAP2
+Processing chromosome: chr6 for gene: TAP2
+gene name:NSUN2
+Processing chromosome: chr5 for gene: NSUN2
+gene name:PPFIBP1
+Processing chromosome: chr12 for gene: PPFIBP1
+gene name:CFAP221
+Processing chromosome: chr2 for gene: CFAP221
+gene name:RP11-508N22.9
+Processing chromosome: chr10 for gene: RP11-508N22.9
+gene name:KIF19
+Processing chromosome: chr17 for gene: KIF19
+gene name:DNM1
+Processing chromosome: chr9 for gene: DNM1
+gene name:AMOT
+Processing chromosome: chrX for gene: AMOT
+gene name:LAMA1
+Processing chromosome: chr18 for gene: LAMA1
+gene name:NSD1
+Processing chromosome: chr5 for gene: NSD1
+gene name:MYO15B
+Processing chromosome: chr17 for gene: MYO15B
+gene name:SRGAP3
+Processing chromosome: chr3 for gene: SRGAP3
+gene name:SPECC1
+Processing chromosome: chr17 for gene: SPECC1
+gene name:ZNF512B
+Processing chromosome: chr20 for gene: ZNF512B
+gene name:STK19
+Processing chromosome: chr6 for gene: STK19
+gene name:ABI2
+Processing chromosome: chr2 for gene: ABI2
+gene name:KDM5B
+Processing chromosome: chr1 for gene: KDM5B
+gene name:RP1-156L9.1
+Processing chromosome: chr2 for gene: RP1-156L9.1
+gene name:TMEM263
+Processing chromosome: chr12 for gene: TMEM263
+gene name:OLR1
+Processing chromosome: chr12 for gene: OLR1
+gene name:ANKRD36C
+Processing chromosome: chr2 for gene: ANKRD36C
+gene name:DNAH6
+Processing chromosome: chr2 for gene: DNAH6
+gene name:DBN1
+Processing chromosome: chr5 for gene: DBN1
+gene name:ZSCAN29
+Processing chromosome: chr15 for gene: ZSCAN29
+gene name:PDLIM2
+Processing chromosome: chr8 for gene: PDLIM2
+gene name:PXK
+Processing chromosome: chr3 for gene: PXK
+gene name:P3H3
+Processing chromosome: chr12 for gene: P3H3
+gene name:FLG-AS1
+Processing chromosome: chr1 for gene: FLG-AS1
+gene name:UGGT1
+Processing chromosome: chr2 for gene: UGGT1
+gene name:MRPL41
+Processing chromosome: chr9 for gene: MRPL41
+gene name:RASA3
+Processing chromosome: chr13 for gene: RASA3
+gene name:AP1G2
+Processing chromosome: chr14 for gene: AP1G2
+gene name:GRIA4
+Processing chromosome: chr11 for gene: GRIA4
+gene name:ULK3
+Processing chromosome: chr15 for gene: ULK3
+gene name:ST6GALNAC6
+Processing chromosome: chr9 for gene: ST6GALNAC6
+gene name:VWA5A
+Processing chromosome: chr11 for gene: VWA5A
+gene name:LMAN2
+Processing chromosome: chr5 for gene: LMAN2
+gene name:ZNF628
+Processing chromosome: chr19 for gene: ZNF628
+gene name:LINC01250
+Processing chromosome: chr2 for gene: LINC01250
+gene name:STARD13
+Processing chromosome: chr13 for gene: STARD13
+gene name:NTRK2
+Processing chromosome: chr9 for gene: NTRK2
+gene name:SRGAP2D
+Processing chromosome: chr1 for gene: SRGAP2D
+gene name:ZDHHC7
+Processing chromosome: chr16 for gene: ZDHHC7
+gene name:GRIA1
+Processing chromosome: chr5 for gene: GRIA1
+gene name:RYR3
+Processing chromosome: chr15 for gene: RYR3
+gene name:TMTC2
+Processing chromosome: chr12 for gene: TMTC2
+gene name:NIPBL
+Processing chromosome: chr5 for gene: NIPBL
+gene name:RIN1
+Processing chromosome: chr11 for gene: RIN1
+gene name:SUGP2
+Processing chromosome: chr19 for gene: SUGP2
+gene name:LSG1
+Processing chromosome: chr3 for gene: LSG1
+gene name:TAB3
+Processing chromosome: chrX for gene: TAB3
+gene name:PES1
+Processing chromosome: chr22 for gene: PES1
+gene name:BMPR1B
+Processing chromosome: chr4 for gene: BMPR1B
+gene name:EBF4
+Processing chromosome: chr20 for gene: EBF4
+gene name:SYNE2
+Processing chromosome: chr14 for gene: SYNE2
+gene name:EMC1
+Processing chromosome: chr1 for gene: EMC1
+gene name:ALDH1A2
+Processing chromosome: chr15 for gene: ALDH1A2
+gene name:ADSS
+Processing chromosome: chr1 for gene: ADSS
+gene name:HSF4
+Processing chromosome: chr16 for gene: HSF4
+gene name:RAVER1
+Processing chromosome: chr19 for gene: RAVER1
+gene name:TTC7B
+Processing chromosome: chr14 for gene: TTC7B
+gene name:AP2A2
+Processing chromosome: chr11 for gene: AP2A2
+gene name:SDK2
+Processing chromosome: chr17 for gene: SDK2
+gene name:GTPBP6
+Gene 'GTPBP6' spans multiple chromosomes: chrX, chrY. Generating a plot for each chromosome.
+Processing chromosome: chrX for gene: GTPBP6
+Processing chromosome: chrY for gene: GTPBP6
+gene name:INPP5B
+Processing chromosome: chr1 for gene: INPP5B
+gene name:HECTD1
+Processing chromosome: chr14 for gene: HECTD1
+gene name:RPL27
+Processing chromosome: chr17 for gene: RPL27
+gene name:TSEN54
+Processing chromosome: chr17 for gene: TSEN54
+gene name:GNLY
+Processing chromosome: chr2 for gene: GNLY
+gene name:GSTK1
+Processing chromosome: chr7 for gene: GSTK1
+gene name:FAM184A
+Processing chromosome: chr6 for gene: FAM184A
+gene name:OTOF
+Processing chromosome: chr2 for gene: OTOF
+Warning messages:
+1: ggrepel: 14 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+2: No shared levels found between `names(values)` of the manual scale and the
+data's colour values. 

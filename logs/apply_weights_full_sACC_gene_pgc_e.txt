@@ -1,0 +1,784 @@
+Loading LIBD SLURM module for fusion_twas/github
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+There were 50 or more warnings (use warnings() to see the first 50)
+1420 weights considered, a weight must have Z^2 > 17.1 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_922.wgt.RDat added to model with conditional Z-score of -8.44
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_920.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_1133.wgt.RDat added to model with conditional Z-score of -5.88
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_767.wgt.RDat added to model with conditional Z-score of -5.84
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_765.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_769.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_1808.wgt.RDat added to model with conditional Z-score of -5.84
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_1813.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_1466.wgt.RDat added to model with conditional Z-score of -4.33
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_1480.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_2174.wgt.RDat added to model with conditional Z-score of 4.21
+final best conditional Z^2 = 16.5
+14971 strictly non-overlapping loci
+consolidated to 17 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4.14. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4.14. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 4.14. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4.14. Skipping
+NA added to model with conditional Z-score of -5.84
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 4.14. Skipping
+NA added to model with conditional Z-score of -8.44
+NA added to model with conditional Z-score of -4.83
+NA added to model with conditional Z-score of 9.11
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 4.14. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 4.14. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 4.14. Skipping
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_1266.wgt.RDat added to model with conditional Z-score of -5.88
+NA added to model with conditional Z-score of -4.33
+NA added to model with conditional Z-score of -5.84
+WARNING: no models in CLUMP 14 had an absolute marginal association statistic higher than 4.14. Skipping
+WARNING: no models in CLUMP 15 had an absolute marginal association statistic higher than 4.14. Skipping
+NA added to model with conditional Z-score of 4.21
+WARNING: no models in CLUMP 17 had an absolute marginal association statistic higher than 4.14. Skipping
+Warning messages:
+1: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+2: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+3: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 50 or more warnings (use warnings() to see the first 50)
+1071 weights considered, a weight must have Z^2 > 16.6 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_2524.wgt.RDat added to model with conditional Z-score of 5.98
+final best conditional Z^2 = 16.5
+15573 strictly non-overlapping loci
+consolidated to 28 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4.07. Skipping
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_2640.wgt.RDat added to model with conditional Z-score of 5.98
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 14 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 15 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 16 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 17 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 18 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 19 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 20 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 21 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 22 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 23 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 24 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 25 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 26 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 27 had an absolute marginal association statistic higher than 4.07. Skipping
+WARNING: no models in CLUMP 28 had an absolute marginal association statistic higher than 4.07. Skipping
+There were 39 warnings (use warnings() to see them)
+839 weights considered, a weight must have Z^2 > 16.1 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4535.wgt.RDat added to model with conditional Z-score of 5.23
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4553.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4556.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4426.wgt.RDat added to model with conditional Z-score of -5.02
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4427.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4422.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4436.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4841.wgt.RDat added to model with conditional Z-score of 4.77
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4427.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4896.wgt.RDat added to model with conditional Z-score of 4.6
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4427.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4897.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4617.wgt.RDat added to model with conditional Z-score of 4.44
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4427.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4597.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4598.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4624.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4809.wgt.RDat added to model with conditional Z-score of 4.35
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4427.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4816.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4818.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4820.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4417.wgt.RDat added to model with conditional Z-score of -4.26
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4427.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4413.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4416.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 14.9
+12305 strictly non-overlapping loci
+consolidated to 22 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 4.01. Skipping
+NA added to model with conditional Z-score of 5.23
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4609.wgt.RDat added to model with conditional Z-score of -5.02
+NA added to model with conditional Z-score of 4.44
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4597.wgt.RDat added to model with conditional Z-score of -4.26
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4603.wgt.RDat added to model with conditional Z-score of -5.31
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4614.wgt.RDat added to model with conditional Z-score of 5.29
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4598.wgt.RDat added to model with conditional Z-score of -13.7
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4623.wgt.RDat added to model with conditional Z-score of 40.8
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4618.wgt.RDat added to model with conditional Z-score of 60.8
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4595.wgt.RDat added to model with conditional Z-score of 81.7
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4626.wgt.RDat added to model with conditional Z-score of -202
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4629.wgt.RDat added to model with conditional Z-score of 336
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4604.wgt.RDat added to model with conditional Z-score of -890
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4631.wgt.RDat added to model with conditional Z-score of -5626
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4586.wgt.RDat added to model with conditional Z-score of -5949
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4577.wgt.RDat added to model with conditional Z-score of 16661
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4573.wgt.RDat added to model with conditional Z-score of -75311
+NA added to model with conditional Z-score of 4.13
+NA added to model with conditional Z-score of 5.9
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4713.wgt.RDat added to model with conditional Z-score of 12.4
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4705.wgt.RDat added to model with conditional Z-score of 140
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_4692.wgt.RDat added to model with conditional Z-score of -166
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 4.01. Skipping
+NA added to model with conditional Z-score of 4.35
+NA added to model with conditional Z-score of -7.06
+NA added to model with conditional Z-score of -6.28
+NA added to model with conditional Z-score of 4.77
+NA added to model with conditional Z-score of 4.6
+NA added to model with conditional Z-score of -4.78
+WARNING: no models in CLUMP 16 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 17 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 18 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 19 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 20 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 21 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 22 had an absolute marginal association statistic higher than 4.01. Skipping
+Warning message:
+In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 16 warnings (use warnings() to see them)
+627 weights considered, a weight must have Z^2 > 15.6 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_6383.wgt.RDat added to model with conditional Z-score of -4.49
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_6109.wgt.RDat added to model with conditional Z-score of -4.39
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_5806.wgt.RDat added to model with conditional Z-score of 4.21
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_5697.wgt.RDat added to model with conditional Z-score of -4.19
+final best conditional Z^2 = 13.1
+10840 strictly non-overlapping loci
+consolidated to 28 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.95. Skipping
+NA added to model with conditional Z-score of -4.19
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.95. Skipping
+NA added to model with conditional Z-score of 4.21
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 14 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 15 had an absolute marginal association statistic higher than 3.95. Skipping
+NA added to model with conditional Z-score of -4.39
+WARNING: no models in CLUMP 17 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 18 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 19 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 20 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 21 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 22 had an absolute marginal association statistic higher than 3.95. Skipping
+NA added to model with conditional Z-score of -4.49
+WARNING: no models in CLUMP 24 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 25 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 26 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 27 had an absolute marginal association statistic higher than 3.95. Skipping
+WARNING: no models in CLUMP 28 had an absolute marginal association statistic higher than 3.95. Skipping
+Warning message:
+In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 41 warnings (use warnings() to see them)
+777 weights considered, a weight must have Z^2 > 16 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_7021.wgt.RDat added to model with conditional Z-score of 5.06
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_7475.wgt.RDat added to model with conditional Z-score of -4.14
+final best conditional Z^2 = 15.3
+11637 strictly non-overlapping loci
+consolidated to 26 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 4. Skipping
+NA added to model with conditional Z-score of 5.06
+WARNING: no models in CLUMP 15 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 16 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 17 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 18 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 19 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 20 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 21 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 22 had an absolute marginal association statistic higher than 4. Skipping
+NA added to model with conditional Z-score of -4.14
+WARNING: no models in CLUMP 24 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 25 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 26 had an absolute marginal association statistic higher than 4. Skipping
+There were 33 warnings (use warnings() to see them)
+Error in wgt.matrix[qc$flip, ] : incorrect number of dimensions
+Execution halted
+There were 36 warnings (use warnings() to see them)
+742 weights considered, a weight must have Z^2 > 15.9 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_9062.wgt.RDat added to model with conditional Z-score of 4.51
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_9071.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_9895.wgt.RDat added to model with conditional Z-score of -4.44
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_9893.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_10235.wgt.RDat added to model with conditional Z-score of 4.35
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_10234.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 12.3
+10367 strictly non-overlapping loci
+consolidated to 15 non-overlapping loci with 100000 bp buffer
+NA added to model with conditional Z-score of 4.51
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.99. Skipping
+NA added to model with conditional Z-score of -4.44
+NA added to model with conditional Z-score of 4.4
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 3.99. Skipping
+WARNING: no models in CLUMP 14 had an absolute marginal association statistic higher than 3.99. Skipping
+NA added to model with conditional Z-score of 4.35
+There were 34 warnings (use warnings() to see them)
+604 weights considered, a weight must have Z^2 > 15.5 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_10675.wgt.RDat added to model with conditional Z-score of 6.19
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_10671.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 15.4
+10571 strictly non-overlapping loci
+consolidated to 19 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.94. Skipping
+NA added to model with conditional Z-score of 6.19
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 14 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 15 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 16 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 17 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 18 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 19 had an absolute marginal association statistic higher than 3.94. Skipping
+There were 26 warnings (use warnings() to see them)
+Error in wgt.matrix[qc$flip, ] : incorrect number of dimensions
+Execution halted
+There were 22 warnings (use warnings() to see them)
+612 weights considered, a weight must have Z^2 > 15.5 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_12988.wgt.RDat added to model with conditional Z-score of -4.93
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_12967.wgt.RDat added to model with conditional Z-score of 4.81
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_12228.wgt.RDat added to model with conditional Z-score of 4.5
+final best conditional Z^2 = 15.1
+9916 strictly non-overlapping loci
+consolidated to 16 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.94. Skipping
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_12281.wgt.RDat added to model with conditional Z-score of 4.5
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 3.94. Skipping
+NA added to model with conditional Z-score of -4.93
+NA added to model with conditional Z-score of 4.81
+WARNING: no models in CLUMP 15 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 16 had an absolute marginal association statistic higher than 3.94. Skipping
+There were 34 warnings (use warnings() to see them)
+795 weights considered, a weight must have Z^2 > 16 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14245.wgt.RDat added to model with conditional Z-score of -6.03
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13795.wgt.RDat added to model with conditional Z-score of -5.09
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13776.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13778.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13788.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13793.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13813.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13822.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13568.wgt.RDat added to model with conditional Z-score of 4.85
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13569.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14165.wgt.RDat added to model with conditional Z-score of 4.6
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13869.wgt.RDat added to model with conditional Z-score of 4.27
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13858.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_13607.wgt.RDat added to model with conditional Z-score of -4.26
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14298.wgt.RDat added to model with conditional Z-score of -4.12
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14290.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14296.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14300.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14301.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14310.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14312.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14328.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_14329.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 14
+9449 strictly non-overlapping loci
+consolidated to 12 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 4. Skipping
+NA added to model with conditional Z-score of 4.85
+NA added to model with conditional Z-score of -5.09
+NA added to model with conditional Z-score of 4.27
+NA added to model with conditional Z-score of -5.84
+NA added to model with conditional Z-score of 12.8
+NA added to model with conditional Z-score of 8.97
+NA added to model with conditional Z-score of -12.3
+NA added to model with conditional Z-score of -16.2
+NA added to model with conditional Z-score of -25.1
+NA added to model with conditional Z-score of -123
+NA added to model with conditional Z-score of -264
+NA added to model with conditional Z-score of 778
+NA added to model with conditional Z-score of -1814
+NA added to model with conditional Z-score of 5490
+NA added to model with conditional Z-score of -25892
+NA added to model with conditional Z-score of -4.26
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 4. Skipping
+NA added to model with conditional Z-score of -6.03
+NA added to model with conditional Z-score of 4.6
+NA added to model with conditional Z-score of -4.12
+NA added to model with conditional Z-score of -5.95
+NA added to model with conditional Z-score of 6.73
+NA added to model with conditional Z-score of -8.12
+NA added to model with conditional Z-score of -18.1
+NA added to model with conditional Z-score of 48.4
+NA added to model with conditional Z-score of -69.1
+NA added to model with conditional Z-score of 166
+NA added to model with conditional Z-score of -304
+NA added to model with conditional Z-score of 376
+NA added to model with conditional Z-score of 1392
+NA added to model with conditional Z-score of -551
+NA added to model with conditional Z-score of -272
+NA added to model with conditional Z-score of -339
+NA added to model with conditional Z-score of 219
+NA added to model with conditional Z-score of 212
+NA added to model with conditional Z-score of 111
+NA added to model with conditional Z-score of 110
+NA added to model with conditional Z-score of -96
+Warning messages:
+1: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+2: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 31 warnings (use warnings() to see them)
+791 weights considered, a weight must have Z^2 > 16 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15605.wgt.RDat added to model with conditional Z-score of -4.45
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15594.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15597.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15601.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15265.wgt.RDat added to model with conditional Z-score of 4.37
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15131.wgt.RDat added to model with conditional Z-score of 4.23
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15124.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15133.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15144.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15149.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15164.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 15
+9170 strictly non-overlapping loci
+consolidated to 10 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4. Skipping
+NA added to model with conditional Z-score of 4.23
+NA added to model with conditional Z-score of -4.2
+NA added to model with conditional Z-score of 7.13
+NA added to model with conditional Z-score of -24.5
+NA added to model with conditional Z-score of -38.9
+NA added to model with conditional Z-score of 66.9
+NA added to model with conditional Z-score of -16.1
+NA added to model with conditional Z-score of 4.37
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 4. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 4. Skipping
+NA added to model with conditional Z-score of -4.45
+NA added to model with conditional Z-score of -4.7
+NA added to model with conditional Z-score of 6.43
+NA added to model with conditional Z-score of -11.3
+NA added to model with conditional Z-score of -18.9
+NA added to model with conditional Z-score of 29.7
+NA added to model with conditional Z-score of -310
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 4. Skipping
+Warning messages:
+1: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+2: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+3: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 15 warnings (use warnings() to see them)
+330 weights considered, a weight must have Z^2 > 14.4 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15949.wgt.RDat added to model with conditional Z-score of -5.86
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15950.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 13.2
+6242 strictly non-overlapping loci
+consolidated to 14 non-overlapping loci with 100000 bp buffer
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_15950.wgt.RDat added to model with conditional Z-score of -5.86
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 12 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 13 had an absolute marginal association statistic higher than 3.79. Skipping
+WARNING: no models in CLUMP 14 had an absolute marginal association statistic higher than 3.79. Skipping
+There were 27 warnings (use warnings() to see them)
+501 weights considered, a weight must have Z^2 > 15.1 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16863.wgt.RDat added to model with conditional Z-score of -5.63
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16861.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16869.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16872.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16873.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16874.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16876.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16878.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17096.wgt.RDat added to model with conditional Z-score of -4.51
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17089.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17091.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17118.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17206.wgt.RDat added to model with conditional Z-score of 4.51
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17207.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17196.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16571.wgt.RDat added to model with conditional Z-score of -3.9
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17207.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_16573.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 15.1
+5654 strictly non-overlapping loci
+consolidated to 12 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.89. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.89. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.89. Skipping
+NA added to model with conditional Z-score of -3.9
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.89. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.89. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.89. Skipping
+NA added to model with conditional Z-score of -5.63
+NA added to model with conditional Z-score of -6.79
+NA added to model with conditional Z-score of 9.1
+NA added to model with conditional Z-score of 8.01
+NA added to model with conditional Z-score of -13.3
+NA added to model with conditional Z-score of 22.7
+NA added to model with conditional Z-score of -111
+NA added to model with conditional Z-score of 305
+NA added to model with conditional Z-score of 224
+NA added to model with conditional Z-score of -301
+NA added to model with conditional Z-score of -609
+NA added to model with conditional Z-score of -2244
+NA added to model with conditional Z-score of -850
+NA added to model with conditional Z-score of 977
+NA added to model with conditional Z-score of 869
+NA added to model with conditional Z-score of 772
+NA added to model with conditional Z-score of 987
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.89. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.89. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.89. Skipping
+NA added to model with conditional Z-score of -4.51
+NA added to model with conditional Z-score of 4.51
+Warning messages:
+1: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+2: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 42 warnings (use warnings() to see them)
+576 weights considered, a weight must have Z^2 > 15.4 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_17630.wgt.RDat added to model with conditional Z-score of 4.38
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18143.wgt.RDat added to model with conditional Z-score of -4.05
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18137.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18145.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18147.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 15.1
+5503 strictly non-overlapping loci
+consolidated to 10 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.92. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.92. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.92. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.92. Skipping
+NA added to model with conditional Z-score of 4.38
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.92. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.92. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.92. Skipping
+NA added to model with conditional Z-score of -4.05
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.92. Skipping
+There were 31 warnings (use warnings() to see them)
+624 weights considered, a weight must have Z^2 > 15.6 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18545.wgt.RDat added to model with conditional Z-score of 5.29
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18637.wgt.RDat added to model with conditional Z-score of -4.78
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18533.wgt.RDat added to model with conditional Z-score of 4.55
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18530.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18531.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18569.wgt.RDat added to model with conditional Z-score of -4.35
+final best conditional Z^2 = 12.7
+5360 strictly non-overlapping loci
+consolidated to 11 non-overlapping loci with 100000 bp buffer
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18545.wgt.RDat added to model with conditional Z-score of 5.29
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_18533.wgt.RDat added to model with conditional Z-score of 4.55
+NA added to model with conditional Z-score of -4.35
+NA added to model with conditional Z-score of -4.78
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.94. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.94. Skipping
+There were 38 warnings (use warnings() to see them)
+837 weights considered, a weight must have Z^2 > 16.1 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_20563.wgt.RDat added to model with conditional Z-score of 4.1
+final best conditional Z^2 = 15.1
+4192 strictly non-overlapping loci
+consolidated to 8 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 4.01. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 4.01. Skipping
+NA added to model with conditional Z-score of 4.1
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 4.01. Skipping
+There were 11 warnings (use warnings() to see them)
+286 weights considered, a weight must have Z^2 > 14.1 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_21159.wgt.RDat added to model with conditional Z-score of -8.55
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_21155.wgt.RDat added to model with conditional Z-score of 7.1
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_21158.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_21080.wgt.RDat added to model with conditional Z-score of -4.15
+final best conditional Z^2 = 12.2
+5391 strictly non-overlapping loci
+consolidated to 11 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.75. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.75. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.75. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.75. Skipping
+NA added to model with conditional Z-score of -4.15
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.75. Skipping
+NA added to model with conditional Z-score of -8.55
+NA added to model with conditional Z-score of 7.1
+NA added to model with conditional Z-score of 4.03
+NA added to model with conditional Z-score of 3.79
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.75. Skipping
+WARNING: no models in CLUMP 9 had an absolute marginal association statistic higher than 3.75. Skipping
+WARNING: no models in CLUMP 10 had an absolute marginal association statistic higher than 3.75. Skipping
+WARNING: no models in CLUMP 11 had an absolute marginal association statistic higher than 3.75. Skipping
+Warning messages:
+1: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+2: In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced
+There were 35 warnings (use warnings() to see them)
+856 weights considered, a weight must have Z^2 > 16.2 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+WARNING: no models had an absolute marginal association statistic higher than 4.02. Skipping
+2484 strictly non-overlapping loci
+consolidated to 4 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 4.02. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 4.02. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 4.02. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 4.02. Skipping
+There were 15 warnings (use warnings() to see them)
+397 weights considered, a weight must have Z^2 > 14.7 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+WARNING: no models had an absolute marginal association statistic higher than 3.83. Skipping
+4852 strictly non-overlapping loci
+consolidated to 8 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 5 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 6 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 7 had an absolute marginal association statistic higher than 3.83. Skipping
+WARNING: no models in CLUMP 8 had an absolute marginal association statistic higher than 3.83. Skipping
+Warning messages:
+1: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+2: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+3: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+4: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+5: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+6: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+7: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+8: In FUN(newX[, i], ...) : no non-missing arguments to min; returning Inf
+179 weights considered, a weight must have Z^2 > 13.2 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+WARNING: no models had an absolute marginal association statistic higher than 3.63. Skipping
+2384 strictly non-overlapping loci
+consolidated to 4 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.63. Skipping
+WARNING: no models in CLUMP 2 had an absolute marginal association statistic higher than 3.63. Skipping
+WARNING: no models in CLUMP 3 had an absolute marginal association statistic higher than 3.63. Skipping
+WARNING: no models in CLUMP 4 had an absolute marginal association statistic higher than 3.63. Skipping
+There were 11 warnings (use warnings() to see them)
+347 weights considered, a weight must have Z^2 > 14.4 to be retained in the model
+corrplot 0.92 loaded
+Warning messages:
+1: In text.default(pos.xlabel[, 1], pos.xlabel[, 2], newcolnames, srt = tl.srt,  :
+  "cl.lim" is not a graphical parameter
+2: In text.default(pos.ylabel[, 1], pos.ylabel[, 2], newrownames, col = tl.col,  :
+  "cl.lim" is not a graphical parameter
+3: In title(title, ...) : "cl.lim" is not a graphical parameter
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_23738.wgt.RDat added to model with conditional Z-score of -4.11
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_23749.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24095.wgt.RDat added to model with conditional Z-score of 3.96
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24096.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24100.wgt.RDat dropped from the model due to correlation higher than --max_r2 to other genes in the model
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24087.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24098.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24101.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24103.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24106.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24107.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24109.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24110.wgt.RDat/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24118.wgt.RDat became more significant after conditional analysis and are dropped from the model (this is usually a sign of LD mismatch or a complex locus)
+final best conditional Z^2 = 12.6
+2414 strictly non-overlapping loci
+consolidated to 3 non-overlapping loci with 100000 bp buffer
+WARNING: no models in CLUMP 1 had an absolute marginal association statistic higher than 3.8. Skipping
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_23773.wgt.RDat added to model with conditional Z-score of -4.11
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24207.wgt.RDat added to model with conditional Z-score of 3.96
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24215.wgt.RDat added to model with conditional Z-score of -8.98
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24199.wgt.RDat added to model with conditional Z-score of -13.7
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24204.wgt.RDat added to model with conditional Z-score of 22.4
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24212.wgt.RDat added to model with conditional Z-score of 279
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24221.wgt.RDat added to model with conditional Z-score of -429
+NA added to model with conditional Z-score of 132
+/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene//out_files/gene_24241.wgt.RDat added to model with conditional Z-score of -384
+NA added to model with conditional Z-score of 618
+NA added to model with conditional Z-score of -351
+NA added to model with conditional Z-score of 297
+NA added to model with conditional Z-score of 573
+NA added to model with conditional Z-score of -881
+NA added to model with conditional Z-score of 747
+NA added to model with conditional Z-score of 1078
+NA added to model with conditional Z-score of 2305
+NA added to model with conditional Z-score of 2258
+NA added to model with conditional Z-score of -1218
+NA added to model with conditional Z-score of -2713
+NA added to model with conditional Z-score of 2964
+NA added to model with conditional Z-score of -7590
+NA added to model with conditional Z-score of -10078
+NA added to model with conditional Z-score of -15682
+NA added to model with conditional Z-score of -17939
+NA added to model with conditional Z-score of 57338
+Warning message:
+In sqrt(1 - snp.ge.ld %*% (cur.dinv) %*% t(snp.ge.ld)) : NaNs produced

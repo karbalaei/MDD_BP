@@ -1,0 +1,229 @@
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading LIBD SLURM module for plink/1.90bLoading LIBD SLURM module for plink/1.90b
+
+Plink 1.9 is invoked with the command 'plink'.Plink 1.9 is invoked with the command 'plink'.
+
+Loading LIBD SLURM module for fusion_twas/github
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Unloading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for fusion_twas/githubLoading LIBD SLURM module for fusion_twas/github
+Loading LIBD SLURM module for fusion_twas/github
+
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Unloading LIBD SLURM module for plink/1.90b
+Unloading LIBD SLURM module for plink/1.90bUnloading LIBD SLURM module for plink/1.90b
+
+Loading LIBD SLURM module for plink/1.90bLoading LIBD SLURM module for plink/1.90b
+
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.Plink 1.9 is invoked with the command 'plink'.
+Plink 1.9 is invoked with the command 'plink'.
+
+Loading conda_R/4.4
+Loading conda_R/4.4
+Loading conda_R/4.4Loading conda_R/4.4
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+tmp_files/gene_25071 does not exist, likely GCTA could not converge, skipping gene
+oading LIBD SLURM module for plink/1.90bLoading LIBD SLURM module for plink/1.90b
+
+
+
+Plink 1.9 is invoked with the command 'plink'.Plink 1.9 is invoked with the command 'plink'.
+
+Plink 1.9 is invoked with the command 'plink'.Plink 1.9 is invoked with the command 'plink'.
+
+Loading LIBD SLURM module for fusion_twas/github
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Unloading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for fusion_twas/githubLoading LIBD SLURM module for fusion_twas/github
+Loading LIBD SLURM module for fusion_twas/github
+
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Unloading LIBD SLURM module for plink/1.90b
+Unloading LIBD SLURM module for plink/1.90b
+Unloading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for plink/1.90bPlink 1.9 is invoked with the command 'plink'.
+
+Loading LIBD SLURM module for plink/1.90bPlink 1.9 is invoked with the command 'plink'.
+
+Plink 1.9 is invoked with the command 'plink'.
+Loading LIBD SLURM module for fusion_twas/github
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Loading LIBD SLURM module for fusion_twas/githubLoading LIBD SLURM module for fusion_twas/github
+Loading LIBD SLURM module for fusion_twas/github
+
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Unloading LIBD SLURM module for plink/1.90b
+Unloading LIBD SLURM module for plink/1.90b
+Unloading LIBD SLURM module for plink/1.90b
+Unloading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for plink/1.90bPlink 1.9 is invoked with the command 'plink'.
+
+Loading LIBD SLURM module for plink/1.90bPlink 1.9 is invoked with the command 'plink'.
+
+Loading LIBD SLURM module for plink/1.90bPlink 1.9 is invoked with the command 'plink'.
+
+Plink 1.9 is invoked with the command 'plink'.
+Loading conda_R/4.4Loading conda_R/4.4
+
+Loading conda_R/4.4Loading conda_R/4.4
+
+Loading conda_R/4.4Loading conda_R/4.4Loading conda_R/4.4
+
+
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+tmp_files/gene_25077 does not exist, likely GCTA could not converge, skipping gene
+                                                                                                                                                                                                                                                                                                                                                                                                                               tmp_files/gene_25073tmp_files/gene_25078  tmp_files/gene_25080does not exist, likely GCTA could not converge, skipping gene
+does not exist, likely GCTA could not converge, skipping gene
+ does not exist, likely GCTA could not converge, skipping gene
+tmp_files/gene_25079 does not exist, likely GCTA could not converge, skipping gene
+tmp_files/gene_25075 does not exist, likely GCTA could not converge, skipping gene
+tmp_files/gene_25076 does not exist, likely GCTA could not converge, skipping gene
+tmp_files/gene_25074 does not exist, likely GCTA could not converge, skipping gene

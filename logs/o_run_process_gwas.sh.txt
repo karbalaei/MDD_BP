@@ -1,0 +1,15 @@
+**** Job starts ****
+Mon Feb  3 03:41:32 PM EST 2025
+**** JHPCE info ****
+User: rkarbala
+Job id: 13130965
+Job name: run_process_gwas
+Hostname: compute-121
+Task id: 
+
+  FALSE    TRUE 
+ 823651 7656313 
+null device 
+          1 
+**** Job ends ****
+Mon Feb  3 03:46:49 PM EST 2025

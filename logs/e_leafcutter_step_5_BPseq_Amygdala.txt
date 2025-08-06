@@ -1,0 +1,27 @@
+Loading LIBD SLURM module for leafcutter/0.2.9
+Loading required package: leafcutter
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:data.table’:
+
+    between, first, last
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error: ../leafcutter/data/covariates_results/Amygdala_covariates_BPseq_effect_sizes.txt does not exist
+../leafcutter/data/covariates_results/Amygdala_covariates_BPseq_cluster_significance.txt does not exist
+../leafcutter/data/covariates/leafcutter_perind_numers.counts.gz does not exist
+../data/modSep_Amygdala_for_leafcutter_BPseq.txt does not exist
+../leafcutter/data/covariates_results/gencode_hg19_all_introns.bed.gz does not exist
+../leafcutter/data/covariates_results/gencode_hg19_threeprime.bed.gz does not exist
+../leafcutter/data/covariates_results/gencode_hg19_fiveprime.bed.gz does not exist
+../leafcutter/data/covariates_results/gencode_hg19_all_exons.txt.gz does not exist
+Execution halted

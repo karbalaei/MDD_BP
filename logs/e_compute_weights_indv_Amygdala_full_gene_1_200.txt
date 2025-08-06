@@ -1,0 +1,20 @@
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading LIBD SLURM module for fusion_twas/github
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Unloading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+tmp_files3/gene_200 : heritability -0.009923; LRT P-value 0.2894 : skipping gene

@@ -1,0 +1,198 @@
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading LIBD SLURM module for fusion_twas/github
+This module does not come with R dependencies; check
+http://gusevlab.org/projects/fusion/#installation to install any required
+packages for your user. 
+Invoke R scripts as in this example: 'Rscript $(which FUSION.compute_weights.R)
+--help' 
+Unloading LIBD SLURM module for plink/1.90b
+Loading LIBD SLURM module for plink/1.90b
+Plink 1.9 is invoked with the command 'plink'.
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) plink/1.90b          5) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) fusion_twas/github   6) conda_R/4.4
+
+ 
+
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: rafalib
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    shift
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    shift
+
+The following object is masked from ‘package:IRanges’:
+
+    shift
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, second
+
+
+Attaching package: ‘tidyr’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+here() starts at /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010
+2025-01-13 16:01:04.73141 options used
+2025-01-13 16:01:04.766489 loading expression data
+2025-01-13 16:01:07.939271 cleaning expression
+2025-01-13 16:01:10.2723 switch column names to BrNum
+2025-01-13 16:01:10.277964 saving the rse file for later at hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene/working_rse.RData
+2025-01-13 16:01:19.523504 working RSE dimensions
+2025-01-13 16:01:19.526897 reading the bim file /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_unique_snps_bim/mdd_bpd_maf01.rsidsACC_uniqueSNPs
+2025-01-13 16:01:47.650812 number of features kept: 25085
+2025-01-13 16:01:48.179673 number of genes per chr
+2025-01-13 16:01:48.18456 saving the subsetted rse file for later at hydeGoes_scSeq_mdd/MDD_vs_BP/twas/sACC_gene/subsetted_rse.RData
+2025-01-13 16:01:57.8502 current files:
+2025-01-13 16:01:57.851807 creating the i_info.RData file
+2025-01-13 16:01:57.878578 length of i and i.names
+*******************************************************************************
+2025-01-13 18:14:17.727918 building bim file for i = 23000 corresponding to feature ENSG00000149531.15
+*******************************************************************************
+2025-01-13 23:34:46.441765 building bim file for i = 24000 corresponding to feature ENSG00000128311.13
+*******************************************************************************
+2025-01-14 05:10:12.176304 building bim file for i = 25000 corresponding to feature ENSG00000197620.10
+
+*******************************************************************************
+2025-01-13 18:38:50.558326 building bim file for i = 3000 corresponding to feature ENSG00000115423.18
+*******************************************************************************
+2025-01-14 00:00:05.649871 building bim file for i = 4000 corresponding to feature ENSG00000163273.3
+*******************************************************************************
+2025-01-14 05:37:14.155282 building bim file for i = 5000 corresponding to feature ENSG00000282860.1
+
+*******************************************************************************
+2025-01-13 16:01:59.484046 building bim file for i = 1 corresponding to feature ENSG00000227232.5
+*******************************************************************************
+2025-01-13 21:22:59.708204 building bim file for i = 1000 corresponding to feature ENSG00000016602.9
+*******************************************************************************
+2025-01-14 02:51:14.942609 building bim file for i = 2000 corresponding to feature ENSG00000198625.12
+
+*******************************************************************************
+2025-01-13 21:17:15.973626 building bim file for i = 6000 corresponding to feature ENSG00000163319.10
+*******************************************************************************
+2025-01-14 02:45:14.933494 building bim file for i = 7000 corresponding to feature ENSG00000238835.1
+
+*******************************************************************************
+2025-01-13 21:12:02.086859 building bim file for i = 11000 corresponding to feature ENSG00000156804.7
+*******************************************************************************
+2025-01-14 02:39:04.319982 building bim file for i = 12000 corresponding to feature ENSG00000188483.7
+
+*******************************************************************************
+2025-01-13 21:01:37.808113 building bim file for i = 21000 corresponding to feature ENSG00000154059.9
+*******************************************************************************
+2025-01-14 02:26:23.350649 building bim file for i = 22000 corresponding to feature ENSG00000252230.1
+
+*******************************************************************************
+2025-01-13 18:21:31.593992 building bim file for i = 18000 corresponding to feature ENSG00000271983.1
+*******************************************************************************
+2025-01-13 23:44:23.288105 building bim file for i = 19000 corresponding to feature ENSG00000159593.14
+*******************************************************************************
+2025-01-14 05:23:03.476502 building bim file for i = 20000 corresponding to feature ENSG00000278535.4
+
+*******************************************************************************
+2025-01-13 21:07:42.998209 building bim file for i = 16000 corresponding to feature ENSG00000211491.2
+*******************************************************************************
+2025-01-14 02:34:28.083763 building bim file for i = 17000 corresponding to feature ENSG00000175785.12
+
+*******************************************************************************
+2025-01-13 18:34:52.24951 building bim file for i = 8000 corresponding to feature ENSG00000269293.2
+*******************************************************************************
+2025-01-13 23:58:29.519805 building bim file for i = 9000 corresponding to feature ENSG00000232082.1
+*******************************************************************************
+2025-01-14 05:36:16.791255 building bim file for i = 10000 corresponding to feature ENSG00000226045.1
+
+*******************************************************************************
+2025-01-13 18:29:12.91633 building bim file for i = 13000 corresponding to feature ENSG00000150593.16
+*******************************************************************************
+2025-01-13 23:54:41.508662 building bim file for i = 14000 corresponding to feature ENSG00000199090.1
+*******************************************************************************
+2025-01-14 05:34:18.884683 building bim file for i = 15000 corresponding to feature ENSG00000199740.1
+
+2025-01-14 05:45:22.234271 finished creating the bim files
+-- plink version information --

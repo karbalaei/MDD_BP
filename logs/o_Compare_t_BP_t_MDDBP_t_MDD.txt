@@ -1,0 +1,222 @@
+**** Job starts ****
+Thu Jul 10 01:24:19 PM EDT 2025
+**** JHPCE info ****
+User: rkarbala
+Job id: 19848391
+Job name: Compare_t_BP_t_MDDBP_t_MDD
+Node name: compute-168
+Task id: 
+Loading objects:
+  Outlist_BP
+Loading objects:
+  Outlist_test
+Loading objects:
+  outGene
+Loading objects:
+  outExon
+Loading objects:
+  outJxn
+Loading objects:
+  outTx
+$gene
+$gene$amyg
+$gene$amyg$MDD
+[1] 25212
+
+$gene$amyg$BPD
+[1] 25212
+
+
+$gene$sacc
+$gene$sacc$MDD
+[1] 25212
+
+$gene$sacc$BPD
+[1] 25212
+
+
+
+$exon
+$exon$amyg
+$exon$amyg$MDD
+[1] 399529
+
+$exon$amyg$BPD
+[1] 399529
+
+
+$exon$sacc
+$exon$sacc$MDD
+[1] 399529
+
+$exon$sacc$BPD
+[1] 399529
+
+
+
+$jxn
+$jxn$amyg
+$jxn$amyg$MDD
+[1] 305558
+
+$jxn$amyg$BPD
+[1] 305558
+
+
+$jxn$sacc
+$jxn$sacc$MDD
+[1] 305558
+
+$jxn$sacc$BPD
+[1] 305558
+
+
+
+$tx
+$tx$amyg
+$tx$amyg$MDD
+[1] 79730
+
+$tx$amyg$BPD
+[1] 79730
+
+
+$tx$sacc
+$tx$sacc$MDD
+[1] 79730
+
+$tx$sacc$BPD
+[1] 79730
+
+
+
+$gene
+$gene$amyg
+[1] 25212
+
+$gene$sacc
+[1] 25212
+
+
+$exon
+$exon$amyg
+[1] 399529
+
+$exon$sacc
+[1] 399529
+
+
+$jxn
+$jxn$amyg
+[1] 305558
+
+$jxn$sacc
+[1] 305558
+
+
+$tx
+$tx$amyg
+[1] 79730
+
+$tx$sacc
+[1] 79730
+
+
+[1] "2025-07-10 13:29:46 EDT"
+   user  system elapsed 
+318.875   3.482 326.326 
+─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.0 Patched (2024-05-22 r86590)
+ os       Rocky Linux 9.4 (Blue Onyx)
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       US/Eastern
+ date     2025-07-10
+ pandoc   3.1.13 @ /jhpce/shared/community/core/conda_R/4.4/bin/pandoc
+
+─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+ package              * version date (UTC) lib source
+ abind                  1.4-5   2016-07-21 [2] CRAN (R 4.4.0)
+ Biobase              * 2.64.0  2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ BiocGenerics         * 0.50.0  2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ cli                    3.6.5   2025-04-23 [1] CRAN (R 4.4.0)
+ colorspace             2.1-1   2024-07-26 [2] CRAN (R 4.4.0)
+ crayon                 1.5.3   2024-06-20 [1] CRAN (R 4.4.0)
+ DelayedArray           0.30.1  2024-05-07 [2] Bioconductor 3.19 (R 4.4.0)
+ dplyr                * 1.1.4   2023-11-17 [2] CRAN (R 4.4.0)
+ farver                 2.1.2   2024-05-13 [2] CRAN (R 4.4.0)
+ forcats              * 1.0.0   2023-01-29 [2] CRAN (R 4.4.0)
+ fs                     1.6.4   2024-04-25 [2] CRAN (R 4.4.0)
+ gargle                 1.5.2   2023-07-20 [2] CRAN (R 4.4.0)
+ generics               0.1.3   2022-07-05 [2] CRAN (R 4.4.0)
+ GenomeInfoDb         * 1.40.1  2024-05-24 [1] Bioconductor 3.19 (R 4.4.0)
+ GenomeInfoDbData       1.2.12  2024-05-23 [2] Bioconductor
+ GenomicRanges        * 1.56.2  2024-10-09 [1] Bioconductor 3.19 (R 4.4.0)
+ ggplot2              * 3.5.1   2024-04-23 [2] CRAN (R 4.4.0)
+ glue                   1.8.0   2024-09-30 [1] CRAN (R 4.4.0)
+ googledrive            2.1.1   2023-06-11 [2] CRAN (R 4.4.0)
+ gridExtra            * 2.3     2017-09-09 [2] CRAN (R 4.4.0)
+ gtable                 0.3.6   2024-10-25 [1] CRAN (R 4.4.0)
+ here                 * 1.0.1   2020-12-13 [2] CRAN (R 4.4.0)
+ hms                    1.1.3   2023-03-21 [2] CRAN (R 4.4.0)
+ httr                   1.4.7   2023-08-15 [2] CRAN (R 4.4.0)
+ IRanges              * 2.38.1  2024-07-03 [2] Bioconductor 3.19 (R 4.4.0)
+ jaffelab             * 0.99.34 2024-06-26 [1] Github (LieberInstitute/jaffelab@2710795)
+ jsonlite               2.0.0   2025-03-27 [1] CRAN (R 4.4.0)
+ labeling               0.4.3   2023-08-29 [2] CRAN (R 4.4.0)
+ lattice                0.22-6  2024-03-20 [3] CRAN (R 4.4.0)
+ lifecycle              1.0.4   2023-11-07 [2] CRAN (R 4.4.0)
+ limma                  3.60.6  2024-10-02 [1] Bioconductor 3.19 (R 4.4.0)
+ lubridate            * 1.9.4   2024-12-08 [1] CRAN (R 4.4.0)
+ magrittr               2.0.3   2022-03-30 [2] CRAN (R 4.4.0)
+ MASS                   7.3-61  2024-06-13 [3] CRAN (R 4.4.0)
+ Matrix                 1.7-0   2024-04-26 [3] CRAN (R 4.4.0)
+ MatrixGenerics       * 1.16.0  2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ matrixStats          * 1.5.0   2025-01-07 [1] CRAN (R 4.4.0)
+ munsell                0.5.1   2024-04-01 [2] CRAN (R 4.4.0)
+ nlme                   3.1-166 2024-08-14 [3] CRAN (R 4.4.0)
+ pillar                 1.10.2  2025-04-05 [1] CRAN (R 4.4.0)
+ pkgconfig              2.0.3   2019-09-22 [2] CRAN (R 4.4.0)
+ purrr                * 1.0.4   2025-02-05 [1] CRAN (R 4.4.0)
+ R6                     2.6.1   2025-02-15 [1] CRAN (R 4.4.0)
+ rafalib              * 1.0.4   2025-04-08 [1] CRAN (R 4.4.0)
+ ragg                 * 1.4.0   2025-04-10 [1] CRAN (R 4.4.0)
+ RColorBrewer           1.1-3   2022-04-03 [2] CRAN (R 4.4.0)
+ readr                * 2.1.5   2024-01-10 [2] CRAN (R 4.4.0)
+ rlang                  1.1.6   2025-04-11 [1] CRAN (R 4.4.0)
+ rprojroot              2.0.4   2023-11-05 [2] CRAN (R 4.4.0)
+ S4Arrays               1.4.1   2024-05-20 [2] Bioconductor 3.19 (R 4.4.0)
+ S4Vectors            * 0.42.1  2024-07-03 [2] Bioconductor 3.19 (R 4.4.0)
+ scales                 1.3.0   2023-11-28 [2] CRAN (R 4.4.0)
+ segmented              2.1-4   2025-02-28 [1] CRAN (R 4.4.0)
+ sessioninfo          * 1.2.2   2021-12-06 [2] CRAN (R 4.4.0)
+ SparseArray            1.4.8   2024-05-24 [1] Bioconductor 3.19 (R 4.4.0)
+ statmod                1.5.0   2023-01-06 [2] CRAN (R 4.4.0)
+ stringi                1.8.4   2024-05-06 [2] CRAN (R 4.4.0)
+ stringr              * 1.5.1   2023-11-14 [2] CRAN (R 4.4.0)
+ SummarizedExperiment * 1.34.0  2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ systemfonts            1.1.0   2024-05-15 [2] CRAN (R 4.4.0)
+ textshaping            0.4.0   2024-05-24 [2] CRAN (R 4.4.0)
+ tibble               * 3.2.1   2023-03-20 [2] CRAN (R 4.4.0)
+ tidyr                * 1.3.1   2024-01-24 [2] CRAN (R 4.4.0)
+ tidyselect             1.2.1   2024-03-11 [2] CRAN (R 4.4.0)
+ tidyverse            * 2.0.0   2023-02-22 [2] CRAN (R 4.4.0)
+ timechange             0.3.0   2024-01-18 [2] CRAN (R 4.4.0)
+ tzdb                   0.5.0   2025-03-15 [1] CRAN (R 4.4.0)
+ UCSC.utils             1.0.0   2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ vctrs                  0.6.5   2023-12-01 [2] CRAN (R 4.4.0)
+ withr                  3.0.2   2024-10-28 [1] CRAN (R 4.4.0)
+ XVector                0.44.0  2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ zlibbioc               1.50.0  2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+
+ [1] /users/rkarbala/R/4.4
+ [2] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/site-library
+ [3] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/library
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+**** Job ends ****
+Thu Jul 10 01:29:47 PM EDT 2025

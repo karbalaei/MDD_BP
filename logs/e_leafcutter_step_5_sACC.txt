@@ -1,0 +1,49 @@
+Loading LIBD SLURM module for leafcutter/0.2.9
+Loading required package: leafcutter
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:data.table’:
+
+    between, first, last
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Taking input= as a system command ('zless ../leafcutter/covariates_results/gencode_hg38_all_exons.txt.gz') and a variable has been used in the expression passed to `input=`. Please use fread(cmd=...). There is a security concern if you are creating an app, and the app could have a malicious user, and the app is not running in a secure environment; e.g. the app is running as root. Please read item 5 in the NEWS file for v1.11.6 for more information and for the option to suppress this message.
+Taking input= as a system command ('zcat < ../leafcutter/covariates_results/gencode_hg38_all_introns.bed.gz') and a variable has been used in the expression passed to `input=`. Please use fread(cmd=...). There is a security concern if you are creating an app, and the app could have a malicious user, and the app is not running in a secure environment; e.g. the app is running as root. Please read item 5 in the NEWS file for v1.11.6 for more information and for the option to suppress this message.
+Taking input= as a system command ('zcat < ../leafcutter/covariates_results/gencode_hg38_threeprime.bed.gz') and a variable has been used in the expression passed to `input=`. Please use fread(cmd=...). There is a security concern if you are creating an app, and the app could have a malicious user, and the app is not running in a secure environment; e.g. the app is running as root. Please read item 5 in the NEWS file for v1.11.6 for more information and for the option to suppress this message.
+Warning message:
+In left_join(., threeprime_db, by = c("chr", "start")) :
+  Detected an unexpected many-to-many relationship between `x` and `y`.
+ℹ Row 8 of `x` matches multiple rows in `y`.
+ℹ Row 613192 of `y` matches multiple rows in `x`.
+ℹ If a many-to-many relationship is expected, set `relationship =
+  "many-to-many"` to silence this warning.
+Taking input= as a system command ('zcat < ../leafcutter/covariates_results/gencode_hg38_fiveprime.bed.gz') and a variable has been used in the expression passed to `input=`. Please use fread(cmd=...). There is a security concern if you are creating an app, and the app could have a malicious user, and the app is not running in a secure environment; e.g. the app is running as root. Please read item 5 in the NEWS file for v1.11.6 for more information and for the option to suppress this message.
+Warning message:
+In left_join(., fiveprime_db, by = c("chr", "start")) :
+  Detected an unexpected many-to-many relationship between `x` and `y`.
+ℹ Row 8 of `x` matches multiple rows in `y`.
+ℹ Row 613191 of `y` matches multiple rows in `x`.
+ℹ If a many-to-many relationship is expected, set `relationship =
+  "many-to-many"` to silence this warning.
+There were 50 or more warnings (use warnings() to see the first 50)
+`mutate_all()` ignored the following grouping variables:
+• Column `clu`
+ℹ Use `mutate_at(df, vars(-group_cols()), myoperation)` to silence the message.
+Warning message:
+`funs()` was deprecated in dplyr 0.8.0.
+ℹ Please use a list of either functions or lambdas:
+
+# Simple named list: list(mean = mean, median = median)
+
+# Auto named with `tibble::lst()`: tibble::lst(mean, median)
+
+# Using lambdas list(~ mean(., trim = .2), ~ median(., na.rm = TRUE)) 

@@ -1,0 +1,21 @@
+**** Job starts ****
+Sat Feb  8 09:37:29 PM EST 2025
+**** JHPCE info ****
+User: rkarbala
+Job id: 13491309
+Job name: twas_compute_weights_indv_sACC_full_gene_1_bslmm
+Hostname: compute-168
+Task id: 60
+SLURM_ARRAY_TASK_ID is 60
+### Estimating heritability
+Heritability (se): 0.016373 0.01961 LRT P-value: 0.2346 
+551 phenotyped samples,  551 genotyped samples,  4047  markers
+### Performing 5 fold cross-validation
+- Crossval fold 1 
+- Crossval fold 2 
+bili- Crossval fold 5 
+): 0.009842 0.016424 LRT P-value: 0.3206 
+551 phenotyped samples,  551 genotyped samples,  3972  markers
+### Performing 5 fold cross-validation
+- Crossval fold 1 
+tmp_files_bslmm/gene_56.cv.LASSO.lasso  LASSO output did not- Crossval fold 2 

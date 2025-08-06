@@ -1,0 +1,317 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: rafalib
+Setting options('download.file.method.GEOquery'='auto')
+Setting options('GEOquery.inmemory.gpl'=FALSE)
+Loading required package: mgcv
+Loading required package: nlme
+
+Attaching package: ‘nlme’
+
+The following object is masked from ‘package:IRanges’:
+
+    collapse
+
+This is mgcv 1.9-1. For overview type 'help("mgcv-package")'.
+Loading required package: genefilter
+
+Attaching package: ‘genefilter’
+
+The following objects are masked from ‘package:MatrixGenerics’:
+
+    rowSds, rowVars
+
+The following objects are masked from ‘package:matrixStats’:
+
+    rowSds, rowVars
+
+Loading required package: BiocParallel
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:nlme’:
+
+    collapse
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:genefilter’:
+
+    spec
+
+Loading required package: AnnotationDbi
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+
+clusterProfiler v4.12.6 Learn more at https://yulab-smu.top/contribution-knowledge-mining/
+
+Please cite:
+
+S Xu, E Hu, Y Cai, Z Xie, X Luo, L Zhan, W Tang, Q Wang, B Liu, R Wang,
+W Xie, T Wu, L Xie, G Yu. Using clusterProfiler to characterize
+multiomics data. Nature Protocols. 2024, 19(11):3292-3320
+
+Attaching package: ‘clusterProfiler’
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    select
+
+The following object is masked from ‘package:IRanges’:
+
+    slice
+
+The following object is masked from ‘package:S4Vectors’:
+
+    rename
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+Attaching package: ‘purrr’
+
+The following object is masked from ‘package:clusterProfiler’:
+
+    simplify
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    reduce
+
+The following object is masked from ‘package:IRanges’:
+
+    reduce
+
+here() starts at /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP
+
+Attaching package: ‘vctrs’
+
+The following object is masked from ‘package:dplyr’:
+
+    data_frame
+
+
+Attaching package: ‘tibble’
+
+The following object is masked from ‘package:vctrs’:
+
+    data_frame
+
+'select()' returned 1:many mapping between keys and columns
+Warning message:
+In bitr(all_ensembl, fromType = "ENSEMBL", toType = "ENTREZID",  :
+  31.7% of input gene IDs are fail to map...
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Warning messages:
+1: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  13.18% of input gene IDs are fail to map...
+2: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  3.44% of input gene IDs are fail to map...
+3: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  2.3% of input gene IDs are fail to map...
+4: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  20.47% of input gene IDs are fail to map...
+5: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  12.61% of input gene IDs are fail to map...
+6: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  10.08% of input gene IDs are fail to map...
+7: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  2.88% of input gene IDs are fail to map...
+8: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  1.15% of input gene IDs are fail to map...
+9: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  16.19% of input gene IDs are fail to map...
+10: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  9.8% of input gene IDs are fail to map...
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Warning messages:
+1: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  11.94% of input gene IDs are fail to map...
+2: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  4.09% of input gene IDs are fail to map...
+3: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  3.04% of input gene IDs are fail to map...
+4: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  17.02% of input gene IDs are fail to map...
+5: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  6.86% of input gene IDs are fail to map...
+6: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  3.4% of input gene IDs are fail to map...
+7: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  1.51% of input gene IDs are fail to map...
+8: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  15.61% of input gene IDs are fail to map...
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Warning messages:
+1: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  14.52% of input gene IDs are fail to map...
+2: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  2.3% of input gene IDs are fail to map...
+3: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  1.5% of input gene IDs are fail to map...
+4: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  21.51% of input gene IDs are fail to map...
+5: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  22.22% of input gene IDs are fail to map...
+6: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  1.92% of input gene IDs are fail to map...
+7: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  0.5% of input gene IDs are fail to map...
+8: In bitr(e, fromType = "ENSEMBL", toType = "ENTREZID", OrgDb = "org.Hs.eg.db") :
+  16.05% of input gene IDs are fail to map...

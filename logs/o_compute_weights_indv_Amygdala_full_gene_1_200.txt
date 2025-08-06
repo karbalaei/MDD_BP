@@ -1,0 +1,13 @@
+**** Job starts ****
+Thu Feb  6 03:10:14 PM EST 2025
+**** JHPCE info ****
+User: rkarbala
+Job id: 13372122
+Job name: twas_compute_weights_indv_Amygdala_full_gene_1
+Hostname: compute-141
+Task id: 200
+SLURM_ARRAY_TASK_ID is 200
+### Estimating heritability
+Heritability (se): -0.009923 0.011045 LRT P-value: 0.2894 
+**** Job ends ****
+Thu Feb  6 03:10:17 PM EST 2025

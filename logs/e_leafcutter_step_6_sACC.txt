@@ -1,0 +1,292 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+here() starts at /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+creating tables of clusters
+creating graphs of clusters
+
+Attaching package: ‘foreach’
+
+The following objects are masked from ‘package:purrr’:
+
+    accumulate, when
+
+
+Attaching package: ‘reshape2’
+
+The following object is masked from ‘package:tidyr’:
+
+    smiths
+
+
+Attaching package: ‘intervals’
+
+The following object is masked from ‘package:purrr’:
+
+    reduce
+
+The following object is masked from ‘package:tidyr’:
+
+    expand
+
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_25386_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_37444_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_5784_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_41744_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_69393_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_13817_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_69624_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_4554_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_21033_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_13268_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_29519_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_5949_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_24187_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_34896_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_1035_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_18678_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_19368_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_22169_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_68058_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_43338_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_15854_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_6025_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_39533_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_13816_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_39004_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_41923_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_48812_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_19211_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_53984_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_52184_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_40266_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_47336_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_49637_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_19132_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_22690_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_55272_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_31087_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_38285_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_64559_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_2787_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_22742_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_41304_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_62659_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_35459_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_12979_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_4167_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_18091_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_12076_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_15852_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_38813_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_27216_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_45380_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_43075_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_39144_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_42744_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_47145_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_49738_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_2283_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_28003_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_67372_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_64864_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_26656_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_49571_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_69603_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_49619_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_46466_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_17363_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_26697_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_33702_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_68142_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_18350_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_63286_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_43632_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_4693_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_2609_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_21826_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_5131_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_4696_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_12649_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_27734_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_35297_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_39403_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_54413_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_54724_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_41512_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_59569_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_18327_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_19678_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_20580_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_32161_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_9280_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_2329_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_7349_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_23918_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_2021_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_24504_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_51405_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_55234_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_44422_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_56767_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_58809_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_62289_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_56477_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_15022_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_22679_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_36164_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_10510_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_44094_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_47797_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_48567_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_60523_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_22953_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_31810_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_50833_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_55006_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_15478_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_48088_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_44398_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_46320_+_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_69516_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_32165_-_graph.pdf
+Plot successfully saved to: /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP/graphs/leafcutter/sACC/clu_21644_-_graph.pdf
+There were 50 or more warnings (use warnings() to see the first 50)
+creating graphs of genes
+gene name:VSNL1
+gene name:RIT1
+gene name:MCF2
+gene name:TUBA1B
+gene name:USP9Y
+gene name:RPLP1
+gene name:KDM5A
+gene name:RNF213
+gene name:MPC2
+gene name:ATP2C2
+gene name:PUM2
+gene name:RNF220
+gene name:HIF1A
+gene name:CHD8
+gene name:TCEAL7
+gene name:PPP6R2
+gene name:ARHGEF25
+gene name:STK11IP
+gene name:TUBA1A
+gene name:DYNC1I2
+gene name:TTC3
+gene name:FIP1L1
+gene name:RCOR1
+gene name:DIAPH1
+gene name:PDLIM4
+gene name:AHCY
+gene name:CEP97
+gene name:TRAPPC11
+gene name:CCNK
+gene name:LINS1
+gene name:CENPQ
+gene name:PTPRS
+gene name:NOL6
+gene name:PLA2G4A
+gene name:ARHGDIG
+gene name:PLCG1
+gene name:PYCRL
+gene name:PCBP1-AS1
+gene name:UBE4A
+gene name:ADGRB2
+gene name:COL4A2
+gene name:RPLP0P2
+gene name:ARHGEF25
+gene name:KIF5C
+gene name:PTRH2
+gene name:RABL3
+gene name:MGAT3
+gene name:GULP1
+gene name:GNAZ
+gene name:SLC25A26
+gene name:DGKQ
+gene name:ATP8B2
+gene name:EIF5A
+gene name:STS
+gene name:TMEM2
+gene name:TBC1D3I
+gene name:GALNTL6
+gene name:PCDH11Y
+gene name:TENM3
+gene name:UGGT2
+gene name:TBC1D3C
+gene name:ARHGAP33
+gene name:HTR2C
+gene name:GMPR2
+gene name:ADAM28
+gene name:HPS4
+gene name:MYSM1
+gene name:PRRC2C
+gene name:NDUFAF1
+gene name:LAMTOR5
+gene name:MYSM1
+gene name:MYO7A
+gene name:DUS1L
+gene name:NRXN1
+gene name:ATIC
+gene name:MAPK9
+gene name:ZKSCAN3
+gene name:ZNF831
+gene name:ATP6V0E2-AS1
+gene name:PSME1
+gene name:TXNDC16
+gene name:SPRED1
+gene name:SYMPK
+gene name:PPRC1
+gene name:TRIM46
+gene name:GLUD1P7
+gene name:FAM65A
+gene name:HYDIN2
+gene name:IFT140
+gene name:NIPBL
+gene name:MAD2L1BP
+gene name:TRANK1
+gene name:RPS10
+gene name:MAGI2
+gene name:UBR5
+gene name:HIST1H2BC
+gene name:CCDC77
+gene name:ADAMTS17
+gene name:CLASP1
+gene name:NRXN2
+gene name:DENND6B
+gene name:HPS3
+gene name:CC2D2A
+gene name:ELN
+gene name:MLST8
+gene name:IGFLR1
+gene name:LRBA
+gene name:RPL10A
+gene name:DNM1L
+gene name:EIF4G1
+gene name:UBP1
+gene name:SETD5
+gene name:FLNA
+gene name:MYPOP
+gene name:FAM189A1

@@ -1,0 +1,687 @@
+**** Job starts ****
+Tue Jul  8 10:09:44 AM EDT 2025
+**** JHPCE info ****
+User: rkarbala
+Job id: 19752436
+Job name: Enrichment
+Node name: compute-155
+Task id: 
+$gene
+$gene$sacc
+[1] 25212
+
+$gene$amyg
+[1] 25212
+
+
+$exon
+$exon$sacc
+[1] 399529
+
+$exon$amyg
+[1] 399529
+
+
+$jxn
+$jxn$sacc
+[1] 305558
+
+$jxn$amyg
+[1] 305558
+
+
+$tx
+$tx$sacc
+[1] 79730
+
+$tx$amyg
+[1] 79730
+
+
+[1] "ENSG00000227232.5" "ENSG00000278267.1" "ENSG00000269981.1"
+[4] "ENSG00000279457.3" "ENSG00000228463.9" "ENSG00000236679.2"
+[1] 1620058
+[1] 34635
+[1] 26327
+List of 4
+ $ gene:List of 2
+  ..$ sacc: chr [1:129] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+  ..$ amyg: chr [1:129] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000117069.14" ...
+ $ exon:List of 2
+  ..$ sacc: chr [1:698] "ENSG00000008130.15" "ENSG00000078369.17" "ENSG00000157933.9" "ENSG00000283572.1" ...
+  ..$ amyg: chr [1:1112] "ENSG00000127054.19" "ENSG00000205116.3" "ENSG00000078369.17" "ENSG00000162585.16" ...
+ $ jxn :List of 2
+  ..$ sacc: chr [1:521] "ENSG00000158109.14" "ENSG00000054523.17" "ENSG00000004487.15" "ENSG00000142676.12" ...
+  ..$ amyg: chr [1:524] "ENSG00000158109.14" "ENSG00000048707.13" "ENSG00000121766.15" "ENSG00000117408.10" ...
+ $ tx  :List of 2
+  ..$ sacc: chr [1:508] "ENSG00000175756.13" "ENSG00000283572.1" "ENSG00000131686.14" "ENSG00000171603.16" ...
+  ..$ amyg: chr [1:2478] "ENSG00000225972.1" "ENSG00000224969.1" "ENSG00000162572.19" "ENSG00000127054.19" ...
+List of 5
+ $ gene              :List of 2
+  ..$ sacc: chr [1:129] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+  ..$ amyg: chr [1:129] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000117069.14" ...
+ $ exon              :List of 2
+  ..$ sacc: chr [1:698] "ENSG00000008130.15" "ENSG00000078369.17" "ENSG00000157933.9" "ENSG00000283572.1" ...
+  ..$ amyg: chr [1:1112] "ENSG00000127054.19" "ENSG00000205116.3" "ENSG00000078369.17" "ENSG00000162585.16" ...
+ $ jxn               :List of 2
+  ..$ sacc: chr [1:521] "ENSG00000158109.14" "ENSG00000054523.17" "ENSG00000004487.15" "ENSG00000142676.12" ...
+  ..$ amyg: chr [1:524] "ENSG00000158109.14" "ENSG00000048707.13" "ENSG00000121766.15" "ENSG00000117408.10" ...
+ $ tx                :List of 2
+  ..$ sacc: chr [1:508] "ENSG00000175756.13" "ENSG00000283572.1" "ENSG00000131686.14" "ENSG00000171603.16" ...
+  ..$ amyg: chr [1:2478] "ENSG00000225972.1" "ENSG00000224969.1" "ENSG00000162572.19" "ENSG00000127054.19" ...
+ $ All_assigned_genes:List of 2
+  ..$ amyg: chr [1:1459] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+  ..$ sacc: chr [1:3474] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000117069.14" ...
+List of 4
+ $ gene:List of 2
+  ..$ sacc: chr [1:67] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+  ..$ amyg: chr [1:102] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000081019.13" ...
+ $ exon:List of 2
+  ..$ sacc: chr [1:440] "ENSG00000078369.17" "ENSG00000157933.9" "ENSG00000283572.1" "ENSG00000158109.14" ...
+  ..$ amyg: chr [1:705] "ENSG00000127054.19" "ENSG00000078369.17" "ENSG00000162585.16" "ENSG00000177133.10" ...
+ $ jxn :List of 2
+  ..$ sacc: chr [1:263] "ENSG00000158109.14" "ENSG00000004487.15" "ENSG00000204178.9" "ENSG00000121774.17" ...
+  ..$ amyg: chr [1:332] "ENSG00000158109.14" "ENSG00000048707.13" "ENSG00000086015.20" "ENSG00000163125.15" ...
+ $ tx  :List of 2
+  ..$ sacc: chr [1:141] "ENSG00000283572.1" "ENSG00000054523.17" "ENSG00000162512.15" "ENSG00000154027.18" ...
+  ..$ amyg: chr [1:205] "ENSG00000078369.17" "ENSG00000184007.18" "ENSG00000084070.11" "ENSG00000117519.15" ...
+List of 4
+ $ gene:List of 2
+  ..$ sacc: chr [1:62] "ENSG00000159596.6" "ENSG00000143036.16" "ENSG00000079335.18" "ENSG00000052723.11" ...
+  ..$ amyg: chr [1:27] "ENSG00000117069.14" "ENSG00000116521.10" "ENSG00000239899.3" "ENSG00000143933.16" ...
+ $ exon:List of 2
+  ..$ sacc: chr [1:261] "ENSG00000008130.15" "ENSG00000007923.15" "ENSG00000074800.13" "ENSG00000116688.16" ...
+  ..$ amyg: chr [1:417] "ENSG00000205116.3" "ENSG00000074800.13" "ENSG00000077549.17" "ENSG00000127423.10" ...
+ $ jxn :List of 2
+  ..$ sacc: chr [1:267] "ENSG00000054523.17" "ENSG00000142676.12" "ENSG00000183726.10" "ENSG00000117640.17" ...
+  ..$ amyg: chr [1:199] "ENSG00000121766.15" "ENSG00000117408.10" "ENSG00000117069.14" "ENSG00000163399.15" ...
+ $ tx  :List of 2
+  ..$ sacc: chr [1:372] "ENSG00000175756.13" "ENSG00000131686.14" "ENSG00000171603.16" "ENSG00000189337.16" ...
+  ..$ amyg: chr [1:2313] "ENSG00000225972.1" "ENSG00000224969.1" "ENSG00000162572.19" "ENSG00000127054.19" ...
+List of 2
+ $ sacc:List of 5
+  ..$ gene              : chr [1:129] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+  ..$ exon              : chr [1:698] "ENSG00000008130.15" "ENSG00000078369.17" "ENSG00000157933.9" "ENSG00000283572.1" ...
+  ..$ jxn               : chr [1:521] "ENSG00000158109.14" "ENSG00000054523.17" "ENSG00000004487.15" "ENSG00000142676.12" ...
+  ..$ tx                : chr [1:508] "ENSG00000175756.13" "ENSG00000283572.1" "ENSG00000131686.14" "ENSG00000171603.16" ...
+  ..$ All_assigned_genes: chr [1:3474] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000117069.14" ...
+ $ amyg:List of 5
+  ..$ gene              : chr [1:129] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000117069.14" ...
+  ..$ exon              : chr [1:1112] "ENSG00000127054.19" "ENSG00000205116.3" "ENSG00000078369.17" "ENSG00000162585.16" ...
+  ..$ jxn               : chr [1:524] "ENSG00000158109.14" "ENSG00000048707.13" "ENSG00000121766.15" "ENSG00000117408.10" ...
+  ..$ tx                : chr [1:2478] "ENSG00000225972.1" "ENSG00000224969.1" "ENSG00000162572.19" "ENSG00000127054.19" ...
+  ..$ All_assigned_genes: chr [1:1459] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+              sacc.gene               sacc.exon                sacc.jxn 
+                    129                     698                     521 
+                sacc.tx sacc.All_assigned_genes               amyg.gene 
+                    508                    3474                     129 
+              amyg.exon                amyg.jxn                 amyg.tx 
+                   1112                     524                    2478 
+amyg.All_assigned_genes 
+                   1459 
+              sacc.gene               sacc.exon                sacc.jxn 
+                    112                     679                     509 
+                sacc.tx sacc.All_assigned_genes               amyg.gene 
+                   2683                    5329                     116 
+              amyg.exon                amyg.jxn                 amyg.tx 
+                   1085                     519                    4368 
+amyg.All_assigned_genes 
+                   3598 
+                        [,1] [,2]
+sacc.gene                129  112
+sacc.exon                698  679
+sacc.jxn                 521  509
+sacc.tx                  508 2683
+sacc.All_assigned_genes 3474 5329
+amyg.gene                129  116
+amyg.exon               1112 1085
+amyg.jxn                 524  519
+amyg.tx                 2478 4368
+amyg.All_assigned_genes 1459 3598
+               sacc.gene_BP                sacc.gene_CC 
+                         39                           7 
+               sacc.gene_MF               sacc.gene_ALL 
+                         14                          60 
+               sacc.exon_BP                sacc.exon_CC 
+                        218                         136 
+               sacc.exon_MF               sacc.exon_ALL 
+                         35                         389 
+                sacc.jxn_BP                 sacc.jxn_CC 
+                        633                         177 
+                sacc.jxn_MF                sacc.jxn_ALL 
+                         89                         899 
+ sacc.All_assigned_genes_BP  sacc.All_assigned_genes_CC 
+                        525                         253 
+ sacc.All_assigned_genes_MF sacc.All_assigned_genes_ALL 
+                         67                         845 
+               amyg.gene_BP                amyg.gene_CC 
+                         64                          59 
+               amyg.gene_MF               amyg.gene_ALL 
+                         18                         141 
+               amyg.exon_BP                amyg.exon_CC 
+                        423                         208 
+               amyg.exon_MF               amyg.exon_ALL 
+                         51                         682 
+                amyg.jxn_BP                 amyg.jxn_CC 
+                        452                         206 
+                amyg.jxn_MF                amyg.jxn_ALL 
+                         38                         696 
+                 amyg.tx_BP                  amyg.tx_CC 
+                        133                         127 
+                 amyg.tx_MF                 amyg.tx_ALL 
+                         32                         292 
+ amyg.All_assigned_genes_BP  amyg.All_assigned_genes_CC 
+                        416                         176 
+ amyg.All_assigned_genes_MF amyg.All_assigned_genes_ALL 
+                         44                         636 
+$sacc.gene_BP
+
+$sacc.gene_CC
+
+$sacc.gene_MF
+
+$sacc.gene_ALL
+
+$sacc.exon_BP
+
+$sacc.exon_CC
+
+$sacc.exon_MF
+
+$sacc.exon_ALL
+
+$sacc.jxn_BP
+
+$sacc.jxn_CC
+
+$sacc.jxn_MF
+
+$sacc.jxn_ALL
+
+$sacc.All_assigned_genes_BP
+
+$sacc.All_assigned_genes_CC
+
+$sacc.All_assigned_genes_MF
+
+$sacc.All_assigned_genes_ALL
+
+$amyg.gene_BP
+
+$amyg.gene_CC
+
+$amyg.gene_MF
+
+$amyg.gene_ALL
+
+$amyg.exon_BP
+
+$amyg.exon_CC
+
+$amyg.exon_MF
+
+$amyg.exon_ALL
+
+$amyg.jxn_BP
+
+$amyg.jxn_CC
+
+$amyg.jxn_MF
+
+$amyg.jxn_ALL
+
+$amyg.tx_BP
+
+$amyg.tx_CC
+
+$amyg.tx_MF
+
+$amyg.tx_ALL
+
+$amyg.All_assigned_genes_BP
+
+$amyg.All_assigned_genes_CC
+
+$amyg.All_assigned_genes_MF
+
+$amyg.All_assigned_genes_ALL
+
+null device 
+          1 
+List of 2
+ $ sacc:List of 4
+  ..$ gene: chr [1:67] "ENSG00000283572.1" "ENSG00000097021.19" "ENSG00000179163.11" "ENSG00000270031.1" ...
+  ..$ exon: chr [1:440] "ENSG00000078369.17" "ENSG00000157933.9" "ENSG00000283572.1" "ENSG00000158109.14" ...
+  ..$ jxn : chr [1:263] "ENSG00000158109.14" "ENSG00000004487.15" "ENSG00000204178.9" "ENSG00000121774.17" ...
+  ..$ tx  : chr [1:141] "ENSG00000283572.1" "ENSG00000054523.17" "ENSG00000162512.15" "ENSG00000154027.18" ...
+ $ amyg:List of 4
+  ..$ gene: chr [1:102] "ENSG00000162585.16" "ENSG00000197982.13" "ENSG00000162607.12" "ENSG00000081019.13" ...
+  ..$ exon: chr [1:705] "ENSG00000127054.19" "ENSG00000078369.17" "ENSG00000162585.16" "ENSG00000177133.10" ...
+  ..$ jxn : chr [1:332] "ENSG00000158109.14" "ENSG00000048707.13" "ENSG00000086015.20" "ENSG00000163125.15" ...
+  ..$ tx  : chr [1:205] "ENSG00000078369.17" "ENSG00000184007.18" "ENSG00000084070.11" "ENSG00000117519.15" ...
+sacc.gene sacc.exon  sacc.jxn   sacc.tx amyg.gene amyg.exon  amyg.jxn   amyg.tx 
+       67       440       263       141       102       705       332       205 
+sacc.gene sacc.exon  sacc.jxn   sacc.tx amyg.gene amyg.exon  amyg.jxn   amyg.tx 
+       59       424       255      2388        95       685       327      2445 
+          [,1] [,2]
+sacc.gene   67   59
+sacc.exon  440  424
+sacc.jxn   263  255
+sacc.tx    141 2388
+amyg.gene  102   95
+amyg.exon  705  685
+amyg.jxn   332  327
+amyg.tx    205 2445
+[1] "list"
+ sacc.gene_BP  sacc.gene_CC  sacc.gene_MF sacc.gene_ALL  sacc.exon_BP 
+           28             0             2            30           140 
+ sacc.exon_CC  sacc.exon_MF sacc.exon_ALL   sacc.jxn_BP   sacc.jxn_CC 
+          113            28           281           637           160 
+  sacc.jxn_MF  sacc.jxn_ALL    sacc.tx_BP    sacc.tx_CC    sacc.tx_MF 
+          102           899            12             0             8 
+  sacc.tx_ALL  amyg.gene_BP  amyg.gene_CC  amyg.gene_MF amyg.gene_ALL 
+           20            79            64            14           157 
+ amyg.exon_BP  amyg.exon_CC  amyg.exon_MF amyg.exon_ALL   amyg.jxn_BP 
+          345           186            76           607           223 
+  amyg.jxn_CC   amyg.jxn_MF  amyg.jxn_ALL    amyg.tx_BP    amyg.tx_CC 
+          197            31           451           181            45 
+   amyg.tx_MF   amyg.tx_ALL 
+            2           228 
+ sacc.gene_BP  sacc.gene_MF sacc.gene_ALL  sacc.exon_BP  sacc.exon_CC 
+           28             2            30           140           113 
+ sacc.exon_MF sacc.exon_ALL   sacc.jxn_BP   sacc.jxn_CC   sacc.jxn_MF 
+           28           281           637           160           102 
+ sacc.jxn_ALL    sacc.tx_BP    sacc.tx_MF   sacc.tx_ALL  amyg.gene_BP 
+          899            12             8            20            79 
+ amyg.gene_CC  amyg.gene_MF amyg.gene_ALL  amyg.exon_BP  amyg.exon_CC 
+           64            14           157           345           186 
+ amyg.exon_MF amyg.exon_ALL   amyg.jxn_BP   amyg.jxn_CC   amyg.jxn_MF 
+           76           607           223           197            31 
+ amyg.jxn_ALL    amyg.tx_BP    amyg.tx_CC    amyg.tx_MF   amyg.tx_ALL 
+          451           181            45             2           228 
+$sacc.gene_BP
+
+$sacc.gene_MF
+
+$sacc.gene_ALL
+
+$sacc.exon_BP
+
+$sacc.exon_CC
+
+$sacc.exon_MF
+
+$sacc.exon_ALL
+
+$sacc.jxn_BP
+
+$sacc.jxn_CC
+
+$sacc.jxn_MF
+
+$sacc.jxn_ALL
+
+$sacc.tx_BP
+
+$sacc.tx_MF
+
+$sacc.tx_ALL
+
+$amyg.gene_BP
+
+$amyg.gene_CC
+
+$amyg.gene_MF
+
+$amyg.gene_ALL
+
+$amyg.exon_BP
+
+$amyg.exon_CC
+
+$amyg.exon_MF
+
+$amyg.exon_ALL
+
+$amyg.jxn_BP
+
+$amyg.jxn_CC
+
+$amyg.jxn_MF
+
+$amyg.jxn_ALL
+
+$amyg.tx_BP
+
+$amyg.tx_CC
+
+$amyg.tx_MF
+
+$amyg.tx_ALL
+
+null device 
+          1 
+List of 2
+ $ sacc:List of 4
+  ..$ gene: chr [1:62] "ENSG00000159596.6" "ENSG00000143036.16" "ENSG00000079335.18" "ENSG00000052723.11" ...
+  ..$ exon: chr [1:261] "ENSG00000008130.15" "ENSG00000007923.15" "ENSG00000074800.13" "ENSG00000116688.16" ...
+  ..$ jxn : chr [1:267] "ENSG00000054523.17" "ENSG00000142676.12" "ENSG00000183726.10" "ENSG00000117640.17" ...
+  ..$ tx  : chr [1:372] "ENSG00000175756.13" "ENSG00000131686.14" "ENSG00000171603.16" "ENSG00000189337.16" ...
+ $ amyg:List of 4
+  ..$ gene: chr [1:27] "ENSG00000117069.14" "ENSG00000116521.10" "ENSG00000239899.3" "ENSG00000143933.16" ...
+  ..$ exon: chr [1:417] "ENSG00000205116.3" "ENSG00000074800.13" "ENSG00000077549.17" "ENSG00000127423.10" ...
+  ..$ jxn : chr [1:199] "ENSG00000121766.15" "ENSG00000117408.10" "ENSG00000117069.14" "ENSG00000163399.15" ...
+  ..$ tx  : chr [1:2313] "ENSG00000225972.1" "ENSG00000224969.1" "ENSG00000162572.19" "ENSG00000127054.19" ...
+sacc.gene sacc.exon  sacc.jxn   sacc.tx amyg.gene amyg.exon  amyg.jxn   amyg.tx 
+       62       261       267       372        27       417       199      2313 
+sacc.gene sacc.exon  sacc.jxn   sacc.tx amyg.gene amyg.exon  amyg.jxn   amyg.tx 
+       53       258       263       300        21       410       199      1961 
+          [,1] [,2]
+sacc.gene   62   53
+sacc.exon  261  258
+sacc.jxn   267  263
+sacc.tx    372  300
+amyg.gene   27   21
+amyg.exon  417  410
+amyg.jxn   199  199
+amyg.tx   2313 1961
+[1] "list"
+ sacc.gene_BP  sacc.gene_CC  sacc.gene_MF sacc.gene_ALL  sacc.exon_BP 
+           25            13             9            47            71 
+ sacc.exon_CC  sacc.exon_MF sacc.exon_ALL   sacc.jxn_BP   sacc.jxn_CC 
+           30            17           118           393            95 
+  sacc.jxn_MF  sacc.jxn_ALL    sacc.tx_BP    sacc.tx_CC    sacc.tx_MF 
+           52           540             1             7             2 
+  sacc.tx_ALL  amyg.gene_BP  amyg.gene_CC  amyg.gene_MF amyg.gene_ALL 
+           10           115            18            62           195 
+ amyg.exon_BP  amyg.exon_CC  amyg.exon_MF amyg.exon_ALL   amyg.jxn_BP 
+           55            97             3           155           170 
+  amyg.jxn_CC   amyg.jxn_MF  amyg.jxn_ALL    amyg.tx_BP    amyg.tx_CC 
+           88             8           266            78           113 
+   amyg.tx_MF   amyg.tx_ALL 
+           22           213 
+ sacc.gene_BP  sacc.gene_CC  sacc.gene_MF sacc.gene_ALL  sacc.exon_BP 
+           25            13             9            47            71 
+ sacc.exon_CC  sacc.exon_MF sacc.exon_ALL   sacc.jxn_BP   sacc.jxn_CC 
+           30            17           118           393            95 
+  sacc.jxn_MF  sacc.jxn_ALL    sacc.tx_BP    sacc.tx_CC    sacc.tx_MF 
+           52           540             1             7             2 
+  sacc.tx_ALL  amyg.gene_BP  amyg.gene_CC  amyg.gene_MF amyg.gene_ALL 
+           10           115            18            62           195 
+ amyg.exon_BP  amyg.exon_CC  amyg.exon_MF amyg.exon_ALL   amyg.jxn_BP 
+           55            97             3           155           170 
+  amyg.jxn_CC   amyg.jxn_MF  amyg.jxn_ALL    amyg.tx_BP    amyg.tx_CC 
+           88             8           266            78           113 
+   amyg.tx_MF   amyg.tx_ALL 
+           22           213 
+$sacc.gene_BP
+
+$sacc.gene_CC
+
+$sacc.gene_MF
+
+$sacc.gene_ALL
+
+$sacc.exon_BP
+
+$sacc.exon_CC
+
+$sacc.exon_MF
+
+$sacc.exon_ALL
+
+$sacc.jxn_BP
+
+$sacc.jxn_CC
+
+$sacc.jxn_MF
+
+$sacc.jxn_ALL
+
+$sacc.tx_BP
+
+$sacc.tx_CC
+
+$sacc.tx_MF
+
+$sacc.tx_ALL
+
+$amyg.gene_BP
+
+$amyg.gene_CC
+
+$amyg.gene_MF
+
+$amyg.gene_ALL
+
+$amyg.exon_BP
+
+$amyg.exon_CC
+
+$amyg.exon_MF
+
+$amyg.exon_ALL
+
+$amyg.jxn_BP
+
+$amyg.jxn_CC
+
+$amyg.jxn_MF
+
+$amyg.jxn_ALL
+
+$amyg.tx_BP
+
+$amyg.tx_CC
+
+$amyg.tx_MF
+
+$amyg.tx_ALL
+
+null device 
+          1 
+[1] "2025-07-08 10:23:13 EDT"
+   user  system elapsed 
+787.210   9.791 808.409 
+─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.0 Patched (2024-05-22 r86590)
+ os       Rocky Linux 9.4 (Blue Onyx)
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       US/Eastern
+ date     2025-07-08
+ pandoc   3.1.13 @ /jhpce/shared/community/core/conda_R/4.4/bin/ (via rmarkdown)
+
+─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+ package              * version   date (UTC) lib source
+ abind                  1.4-5     2016-07-21 [2] CRAN (R 4.4.0)
+ annotate               1.82.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ AnnotationDbi        * 1.66.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ ape                    5.8-1     2024-12-16 [1] CRAN (R 4.4.0)
+ aplot                  0.2.5     2025-02-27 [1] CRAN (R 4.4.0)
+ backports              1.5.0     2024-05-23 [2] CRAN (R 4.4.0)
+ base64enc              0.1-3     2015-07-28 [2] CRAN (R 4.4.0)
+ Biobase              * 2.64.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ BiocGenerics         * 0.50.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ BiocIO                 1.14.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ BiocParallel         * 1.38.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ Biostrings             2.72.1    2024-06-02 [2] Bioconductor 3.19 (R 4.4.0)
+ bit                    4.6.0     2025-03-06 [1] CRAN (R 4.4.0)
+ bit64                  4.0.5     2020-08-30 [2] CRAN (R 4.4.0)
+ bitops                 1.0-8     2024-07-29 [2] CRAN (R 4.4.0)
+ blob                   1.2.4     2023-03-17 [2] CRAN (R 4.4.0)
+ BSgenome               1.72.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ bumphunter             1.46.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ cachem                 1.1.0     2024-05-16 [2] CRAN (R 4.4.0)
+ checkmate              2.3.2     2024-07-29 [2] CRAN (R 4.4.0)
+ cli                    3.6.5     2025-04-23 [1] CRAN (R 4.4.0)
+ cluster                2.1.6     2023-12-01 [3] CRAN (R 4.4.0)
+ clusterProfiler      * 4.12.6    2024-08-25 [1] Bioconductor 3.19 (R 4.4.0)
+ codetools              0.2-20    2024-03-31 [3] CRAN (R 4.4.0)
+ colorspace             2.1-1     2024-07-26 [2] CRAN (R 4.4.0)
+ cowplot                1.1.3     2024-01-22 [2] CRAN (R 4.4.0)
+ crayon                 1.5.3     2024-06-20 [1] CRAN (R 4.4.0)
+ curl                   5.2.1     2024-03-01 [2] CRAN (R 4.4.0)
+ data.table             1.17.4    2025-05-26 [1] CRAN (R 4.4.0)
+ DBI                    1.2.3     2024-06-02 [2] CRAN (R 4.4.0)
+ DelayedArray           0.30.1    2024-05-07 [2] Bioconductor 3.19 (R 4.4.0)
+ derfinder              1.38.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ derfinderHelper        1.38.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ digest                 0.6.37    2024-08-19 [1] CRAN (R 4.4.0)
+ doRNG                  1.8.6.2   2025-04-02 [1] CRAN (R 4.4.0)
+ DOSE                   3.30.5    2024-09-01 [1] Bioconductor 3.19 (R 4.4.0)
+ downloader             0.4       2015-07-09 [2] CRAN (R 4.4.0)
+ dplyr                * 1.1.4     2023-11-17 [2] CRAN (R 4.4.0)
+ edgeR                * 4.2.1     2024-07-14 [2] Bioconductor 3.19 (R 4.4.0)
+ enrichplot           * 1.24.4    2024-09-01 [1] Bioconductor 3.19 (R 4.4.0)
+ evaluate               1.0.3     2025-01-10 [1] CRAN (R 4.4.0)
+ farver                 2.1.2     2024-05-13 [2] CRAN (R 4.4.0)
+ fastmap                1.2.0     2024-05-15 [2] CRAN (R 4.4.0)
+ fastmatch              1.1-4     2023-08-18 [2] CRAN (R 4.4.0)
+ fgsea                  1.30.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ foreach                1.5.2     2022-02-02 [2] CRAN (R 4.4.0)
+ foreign                0.8-87    2024-06-26 [3] CRAN (R 4.4.0)
+ Formula                1.2-5     2023-02-24 [2] CRAN (R 4.4.0)
+ fs                     1.6.4     2024-04-25 [2] CRAN (R 4.4.0)
+ gargle                 1.5.2     2023-07-20 [2] CRAN (R 4.4.0)
+ genefilter           * 1.86.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ generics               0.1.3     2022-07-05 [2] CRAN (R 4.4.0)
+ GenomeInfoDb         * 1.40.1    2024-05-24 [1] Bioconductor 3.19 (R 4.4.0)
+ GenomeInfoDbData       1.2.12    2024-05-23 [2] Bioconductor
+ GenomicAlignments      1.40.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ GenomicFeatures        1.56.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ GenomicFiles           1.40.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ GenomicRanges        * 1.56.2    2024-10-09 [1] Bioconductor 3.19 (R 4.4.0)
+ GEOquery               2.72.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ ggforce                0.4.2     2024-02-19 [2] CRAN (R 4.4.0)
+ ggfun                  0.1.8     2024-12-03 [1] CRAN (R 4.4.0)
+ ggnewscale           * 0.5.1     2025-02-24 [1] CRAN (R 4.4.0)
+ ggplot2              * 3.5.1     2024-04-23 [2] CRAN (R 4.4.0)
+ ggplotify              0.1.2     2023-08-09 [1] CRAN (R 4.4.0)
+ ggraph                 2.2.1     2024-03-07 [2] CRAN (R 4.4.0)
+ ggrepel                0.9.5     2024-01-10 [2] CRAN (R 4.4.0)
+ ggtree                 3.12.0    2024-04-30 [1] Bioconductor 3.19 (R 4.4.0)
+ glue                   1.8.0     2024-09-30 [1] CRAN (R 4.4.0)
+ GO.db                  3.19.1    2024-05-23 [2] Bioconductor
+ googledrive            2.1.1     2023-06-11 [2] CRAN (R 4.4.0)
+ GOSemSim               2.30.2    2024-08-21 [1] Bioconductor 3.19 (R 4.4.0)
+ graphlayouts           1.1.1     2024-03-09 [2] CRAN (R 4.4.0)
+ gridExtra              2.3       2017-09-09 [2] CRAN (R 4.4.0)
+ gridGraphics           0.5-1     2020-12-13 [1] CRAN (R 4.4.0)
+ gson                   0.1.0     2023-03-07 [1] CRAN (R 4.4.0)
+ gtable                 0.3.6     2024-10-25 [1] CRAN (R 4.4.0)
+ here                 * 1.0.1     2020-12-13 [2] CRAN (R 4.4.0)
+ Hmisc                  5.2-3     2025-03-16 [1] CRAN (R 4.4.0)
+ hms                    1.1.3     2023-03-21 [2] CRAN (R 4.4.0)
+ htmlTable              2.4.3     2024-07-21 [1] CRAN (R 4.4.0)
+ htmltools              0.5.8.1   2024-04-04 [2] CRAN (R 4.4.0)
+ htmlwidgets            1.6.4     2023-12-06 [2] CRAN (R 4.4.0)
+ httr                   1.4.7     2023-08-15 [2] CRAN (R 4.4.0)
+ httr2                  1.0.2     2024-07-16 [2] CRAN (R 4.4.0)
+ igraph                 2.1.4     2025-01-23 [1] CRAN (R 4.4.0)
+ IRanges              * 2.38.1    2024-07-03 [2] Bioconductor 3.19 (R 4.4.0)
+ iterators              1.0.14    2022-02-05 [2] CRAN (R 4.4.0)
+ jaffelab             * 0.99.34   2024-06-26 [1] Github (LieberInstitute/jaffelab@2710795)
+ jsonlite               2.0.0     2025-03-27 [1] CRAN (R 4.4.0)
+ KEGGREST             * 1.44.1    2024-06-19 [2] Bioconductor 3.19 (R 4.4.0)
+ knitr                  1.50      2025-03-16 [1] CRAN (R 4.4.0)
+ labeling               0.4.3     2023-08-29 [2] CRAN (R 4.4.0)
+ lattice                0.22-6    2024-03-20 [3] CRAN (R 4.4.0)
+ lazyeval               0.2.2     2019-03-15 [2] CRAN (R 4.4.0)
+ lifecycle              1.0.4     2023-11-07 [2] CRAN (R 4.4.0)
+ limma                * 3.60.6    2024-10-02 [1] Bioconductor 3.19 (R 4.4.0)
+ locfit                 1.5-9.10  2024-06-24 [2] CRAN (R 4.4.0)
+ magrittr               2.0.3     2022-03-30 [2] CRAN (R 4.4.0)
+ MASS                   7.3-61    2024-06-13 [3] CRAN (R 4.4.0)
+ Matrix                 1.7-0     2024-04-26 [3] CRAN (R 4.4.0)
+ MatrixGenerics       * 1.16.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ matrixStats          * 1.5.0     2025-01-07 [1] CRAN (R 4.4.0)
+ memoise                2.0.1     2021-11-26 [2] CRAN (R 4.4.0)
+ mgcv                 * 1.9-1     2023-12-21 [3] CRAN (R 4.4.0)
+ munsell                0.5.1     2024-04-01 [2] CRAN (R 4.4.0)
+ nlme                 * 3.1-166   2024-08-14 [3] CRAN (R 4.4.0)
+ nnet                   7.3-19    2023-05-03 [3] CRAN (R 4.4.0)
+ org.Hs.eg.db         * 3.19.1    2024-05-23 [2] Bioconductor
+ patchwork              1.2.0     2024-01-08 [2] CRAN (R 4.4.0)
+ pillar                 1.10.2    2025-04-05 [1] CRAN (R 4.4.0)
+ pkgconfig              2.0.3     2019-09-22 [2] CRAN (R 4.4.0)
+ plyr                   1.8.9     2023-10-02 [2] CRAN (R 4.4.0)
+ png                    0.1-8     2022-11-29 [2] CRAN (R 4.4.0)
+ polyclip               1.10-7    2024-07-23 [2] CRAN (R 4.4.0)
+ purrr                * 1.0.4     2025-02-05 [1] CRAN (R 4.4.0)
+ qvalue                 2.36.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ R.methodsS3            1.8.2     2022-06-13 [2] CRAN (R 4.4.0)
+ R.oo                   1.26.0    2024-01-24 [2] CRAN (R 4.4.0)
+ R.utils                2.12.3    2023-11-18 [2] CRAN (R 4.4.0)
+ R6                     2.6.1     2025-02-15 [1] CRAN (R 4.4.0)
+ rafalib              * 1.0.4     2025-04-08 [1] CRAN (R 4.4.0)
+ ragg                   1.4.0     2025-04-10 [1] CRAN (R 4.4.0)
+ rappdirs               0.3.3     2021-01-31 [2] CRAN (R 4.4.0)
+ RColorBrewer           1.1-3     2022-04-03 [2] CRAN (R 4.4.0)
+ Rcpp                   1.0.14    2025-01-12 [1] CRAN (R 4.4.0)
+ RCurl                  1.98-1.16 2024-07-11 [2] CRAN (R 4.4.0)
+ readr                * 2.1.5     2024-01-10 [2] CRAN (R 4.4.0)
+ recount              * 1.30.2    2024-05-21 [2] Bioconductor 3.19 (R 4.4.0)
+ rentrez                1.2.3     2020-11-10 [2] CRAN (R 4.4.0)
+ reshape2               1.4.4     2020-04-09 [2] CRAN (R 4.4.0)
+ restfulr               0.0.15    2022-06-16 [2] CRAN (R 4.4.0)
+ rjson                  0.2.21    2022-01-09 [2] CRAN (R 4.4.0)
+ rlang                  1.1.6     2025-04-11 [1] CRAN (R 4.4.0)
+ rmarkdown              2.27      2024-05-17 [2] CRAN (R 4.4.0)
+ rngtools               1.5.2     2021-09-20 [2] CRAN (R 4.4.0)
+ rpart                  4.1.23    2023-12-05 [3] CRAN (R 4.4.0)
+ rprojroot              2.0.4     2023-11-05 [2] CRAN (R 4.4.0)
+ Rsamtools              2.20.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ RSQLite                2.3.7     2024-05-27 [2] CRAN (R 4.4.0)
+ rstudioapi             0.16.0    2024-03-24 [2] CRAN (R 4.4.0)
+ rtracklayer            1.64.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ S4Arrays               1.4.1     2024-05-20 [2] Bioconductor 3.19 (R 4.4.0)
+ S4Vectors            * 0.42.1    2024-07-03 [2] Bioconductor 3.19 (R 4.4.0)
+ scales                 1.3.0     2023-11-28 [2] CRAN (R 4.4.0)
+ scatterpie             0.2.4     2024-08-28 [1] CRAN (R 4.4.0)
+ segmented              2.1-4     2025-02-28 [1] CRAN (R 4.4.0)
+ sessioninfo          * 1.2.2     2021-12-06 [2] CRAN (R 4.4.0)
+ shadowtext             0.1.4     2024-07-18 [1] CRAN (R 4.4.0)
+ SparseArray            1.4.8     2024-05-24 [1] Bioconductor 3.19 (R 4.4.0)
+ statmod                1.5.0     2023-01-06 [2] CRAN (R 4.4.0)
+ stringi                1.8.4     2024-05-06 [2] CRAN (R 4.4.0)
+ stringr              * 1.5.1     2023-11-14 [2] CRAN (R 4.4.0)
+ SummarizedExperiment * 1.34.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ survival               3.7-0     2024-06-05 [3] CRAN (R 4.4.0)
+ sva                  * 3.52.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ systemfonts            1.1.0     2024-05-15 [2] CRAN (R 4.4.0)
+ textshaping            0.4.0     2024-05-24 [2] CRAN (R 4.4.0)
+ tibble               * 3.2.1     2023-03-20 [2] CRAN (R 4.4.0)
+ tidygraph              1.3.1     2024-01-30 [2] CRAN (R 4.4.0)
+ tidyr                  1.3.1     2024-01-24 [2] CRAN (R 4.4.0)
+ tidyselect             1.2.1     2024-03-11 [2] CRAN (R 4.4.0)
+ tidytree               0.4.6     2023-12-12 [1] CRAN (R 4.4.0)
+ treeio                 1.28.0    2024-04-30 [1] Bioconductor 3.19 (R 4.4.0)
+ tweenr                 2.0.3     2024-02-26 [2] CRAN (R 4.4.0)
+ tzdb                   0.5.0     2025-03-15 [1] CRAN (R 4.4.0)
+ UCSC.utils             1.0.0     2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ VariantAnnotation      1.50.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ vctrs                * 0.6.5     2023-12-01 [2] CRAN (R 4.4.0)
+ viridis                0.6.5     2024-01-29 [2] CRAN (R 4.4.0)
+ viridisLite            0.4.2     2023-05-02 [2] CRAN (R 4.4.0)
+ withr                  3.0.2     2024-10-28 [1] CRAN (R 4.4.0)
+ xfun                   0.52      2025-04-02 [1] CRAN (R 4.4.0)
+ XML                    3.99-0.18 2025-01-01 [1] CRAN (R 4.4.0)
+ xml2                   1.3.6     2023-12-04 [2] CRAN (R 4.4.0)
+ xtable                 1.8-4     2019-04-21 [2] CRAN (R 4.4.0)
+ XVector                0.44.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ yaml                   2.3.10    2024-07-26 [1] CRAN (R 4.4.0)
+ yulab.utils            0.2.0     2025-01-29 [1] CRAN (R 4.4.0)
+ zlibbioc               1.50.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+
+ [1] /users/rkarbala/R/4.4
+ [2] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/site-library
+ [3] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/library
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+**** Job ends ****
+Tue Jul  8 10:23:14 AM EDT 2025

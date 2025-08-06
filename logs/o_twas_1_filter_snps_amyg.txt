@@ -1,0 +1,11 @@
+**** Job starts ****
+Mon Feb 17 02:41:57 PM EST 2025
+**** JHPCE info ****
+User: rkarbala
+Job id: 
+Job name: 
+Hostname: compute-152
+Task id: 
+Fatal error: cannot open file './hydeGoes_scSeq_mdd/MDD_vs_BP/twas/1_filter_snps_gene_gene.R': No such file or directory
+**** Job ends ****
+Mon Feb 17 02:41:58 PM EST 2025

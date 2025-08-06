@@ -1,0 +1,35 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+here() starts at /dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/hydeGoes_scSeq_mdd/MDD_vs_BP
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:gridExtra’:
+
+    combine
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+ggrepel: 7 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning messages:
+1: Removed 5 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+2: Removed 9 rows containing missing values or values outside the scale range
+(`geom_label_repel()`). 
+3: Removed 16 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+4: Removed 9 rows containing missing values or values outside the scale range
+(`geom_label_repel()`). 
