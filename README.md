@@ -1,3 +1,3 @@
 # Lithium-exposure
 
-![Flowchart](https://github.com/karbalaei/Lithium-exposure/blob/main/graphs/Flowchart.jpg) 
+![Flowchart](https://github.com/karbalaei/MDD_BP/blob/main/graphs/Flowchart.jpg) 
