@@ -1,8 +1,7 @@
 # MDD vs. BP TWAS Workflow
-This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [1], and the Bipolar Disorder GWAS data provided by 23andMe [2].
-This directory contains the workflow used to conduct summary-TWAS using MDD, BD and control samples across the sACC and amygdala as part of the MDD vs.BP RNA-Seq project. We used the
+This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. 
 
-This directory contains the steps taken to generate TWAS results for both the amygdala and sACC samples using the bipolar disorder GWAS made available by the Psychiatric Genomics Consortium (PGC) which published by Stahl, E.A. et al [[1](#references)] and Bipolar disorder GWAS made available through 23andMe which published by Kevin S. O’Connell [[2](#references)].
+Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[1](#references)].
 
 ## 1) Filter SNPs
 
