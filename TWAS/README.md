@@ -1,5 +1,5 @@
 # MDD vs. BP TWAS Workflow
-
+This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [1], and the Bipolar Disorder GWAS data provided by 23andMe [2].
 This directory contains the workflow used to conduct summary-TWAS using MDD, BD and control samples across the sACC and amygdala as part of the MDD vs.BP RNA-Seq project. We used the
 
 This directory contains the steps taken to generate TWAS results for both the amygdala and sACC samples using the bipolar disorder GWAS made available by the Psychiatric Genomics Consortium (PGC) which published by Stahl, E.A. et al [[1](#references)] and Bipolar disorder GWAS made available through 23andMe which published by Kevin S. O’Connell [[2](#references)].
@@ -7,9 +7,9 @@ This directory contains the steps taken to generate TWAS results for both the am
 ## 1) Filter SNPs
 
 ```
-qsub filter_snps/filter_snps_amygdala_gene.sh
+sbatch 1_filter_snps_amygdala_gene.sh
 # and/or
-qsub filter_snps/filter_snps_sacc_gene.sh
+sbatch 1_filter_snps_sacc_gene.sh
 ```
 
 The first step of this workflow outputs PLINK `.bed`, `.fam`, `.bim` and `.bed` files with Lieber Institute of Brain Development (LIBD) DNA genotype data for the samples used in this RNA-seq project.
@@ -34,16 +34,16 @@ Here, we make use of Gusev et al's `FUSION.compute_weights.R` script [[2](#refer
 
 ## 4) Merge Individual TWAS gene weights
 ```
-qsub compute_weights_Amygdala_gene.sh
+sbatch compute_weights_Amygdala_gene.sh
 # and/or
-qsub compute_weights_sACC_gene.sh
+sbatch compute_weights_sACC_gene.sh
 ```
 
 The results from step #3 are merged together by generating an index `pos_info.Rdata`. `FUSION.profile_wgt.R` from Gusev et al.'s TWAS workflow is also called to produce a per-gene profile with summary of the data and model performance in `{subregion}_gene.profile.err`.
 
 ## 5) Process hg38 GWAS
 ```
-qsub run_process-gwas.sh
+sbatch run_process-gwas.sh
 ```
 
 The GWAS file has already been converted to hg38, but requires some additional processing, such as the calculation of Z-score for each SNP and removal of unnecessary columns. Two histograms representing the frequency of Z-scores and log odds ratio are generated as well.
@@ -57,16 +57,16 @@ The weights generated in step #4 are used to perform expression imputation. `FUS
 
 ## 7) TWAS results into a single Rdata file
 ```
-qsub run_read_twas_amygdala.sh
+sbatch run_read_twas_amygdala.sh
 # and/or
-qsub run_read_twas_sacc.sh
+sbatch run_read_twas_sacc.sh
 ```
 
 All of the TWAS results from both the sACC and amygdala subregions are combined into a single Rdata file that is used for downstream analysis.
 
 ## 8) TWAS plot generation
 ```
-qsub run_generate_twas_plots.sh
+sbatch run_generate_twas_plots.sh
 ```
 
 This script generates a number of different plots and outputs their corresponding tables into `analysis/plots/` and `analysis/tables/`, respectively.
