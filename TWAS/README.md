@@ -18,8 +18,7 @@ sh run_build_bims_Amygdala_gene.sh
 # and/or
 sh run_build_bims_sACC_gene.sh
 ```
-
-This script builds the `.bim` and `.bed` files that contain gene windows with 500kb of coverage on each side of the gene. The outputs are in separate gene window subdirectories in `{subregion}_gene/bim_files/{subregion}_gene_{1:n gene windows}`.
+This script is the second critical phase of a Transcriptome-Wide Association Study (TWAS) pipeline and prepares the input files for the FUSION software. It first loads the previously processed gene expression data for a user-specified brain region, then applies a rigorous cleaning step using a linear model to regress out the effects of known and estimated confounders (like sex, population structure PCs, and expression PCs), resulting in **"cleaned expression" residuals**. Next, the script spatially filters the genes, keeping only those with at least **one SNP within a 1 Mb window**(500kb of coverage on each side of the gene). Finally, using **parallel processing (BiocParallel)**, it iterates through every remaining gene to create thousands of highly **localized PLINK file sets** (BED/BIM/FAM). In this crucial step, the gene's cleaned expression vector is saved as the phenotype in the .fam file, while the genotypes are subsetted to contain only the local SNPs, producing the required input format for building gene expression weight models.The outputs are in separate gene window subdirectories in `{subregion}_gene/bim_files/{subregion}_gene_{1:n gene windows}`.
 
 ## 3) Compute TWAS Weights individually
 ```
