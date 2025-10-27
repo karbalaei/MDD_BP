@@ -1,4 +1,4 @@
-sal## Load plink before starting R:
+## Load plink before starting R:
 # module load plink/1.90b6.6
 ## Also load twas fusion code
 # module load fusion_twas/github
