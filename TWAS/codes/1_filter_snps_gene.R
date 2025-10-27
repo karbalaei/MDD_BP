@@ -18,8 +18,8 @@ spec <- matrix(
     ncol = 5
 )
 opt <- getopt(spec)
-
-# opt$region <- "Amygdala"
+# For test, in interactive mode, remove # from next line
+# opt$region <- "Amygdala" 
 
 if (tolower(opt$region) == "sacc") {
     opt$region = "sACC"
@@ -35,7 +35,6 @@ if (tolower(opt$region) == "sacc") {
 message(paste(Sys.time(), "options used"))
 print(opt)
 
-#dir.create(here("hydeGoes_scSeq_mdd" , "MDD_vs_BP" , "twas" ),   paste0(opt$region, "_rda"), showWarnings = FALSE)
 dir.create(paste0("hydeGoes_scSeq_mdd/MDD_vs_BP/twas/" , opt$region, "_rda"), showWarnings = FALSE)
 
 ## To avoid issues with running this code on qsub
@@ -57,7 +56,6 @@ stopifnot(length(unique(rse_gene$BrNum)) == ncol(rse_gene))
 
 # Load snpPCs
 
-#/dcs04/lieber/lcolladotor/hydeGoes_LIBD3010/goesHyde_mdd_rnaseq/genotype_data/old
 load(here::here("goesHyde_mdd_rnaseq" , "genotype_data", "old" ,  "goesHyde_bipolarMdd_Genotypes_mds.rda"))
 
 # Read in original PLINK files
