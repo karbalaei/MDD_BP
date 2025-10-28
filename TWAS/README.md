@@ -14,9 +14,9 @@ The script first processes gene expression (RNA-seq) data, subsetting it to the 
 
 ## 2) Build gene-level PLINK .bed files
 ```
-sh run_build_bims_Amygdala_gene.sh
+sh 2_build_bims_Amygdala_gene.sh
 # and/or
-sh run_build_bims_sACC_gene.sh
+sh 2_build_bims_sACC_gene.sh
 ```
 This script is the second critical phase of a Transcriptome-Wide Association Study (TWAS) pipeline and prepares the input files for the FUSION software. It first loads the previously processed gene expression data for a user-specified brain region, then applies a rigorous cleaning step using a linear model to regress out the effects of known and estimated confounders (like sex, population structure PCs, and expression PCs), resulting in **"cleaned expression" residuals**. Next, the script spatially filters the genes, keeping only those with at least **one SNP within a 1 Mb window**(500kb of coverage on each side of the gene). Finally, using **parallel processing (BiocParallel)**, it iterates through every remaining gene to create thousands of highly **localized PLINK file sets** (BED/BIM/FAM). In this crucial step, the gene's cleaned expression vector is saved as the phenotype in the .fam file, while the genotypes are subsetted to contain only the local SNPs, producing the required input format for building gene expression weight models.The outputs are in separate gene window subdirectories in `{subregion}_gene/bim_files/{subregion}_gene_{1:n gene windows}`.
 
@@ -29,6 +29,17 @@ sh run_compute_weights_indv_sACC_full_gene.sh
 
 Here, we make use of Gusev et al's `FUSION.compute_weights.R` script [[2](#references)], which produces expression weights one gene at a time, taking in the above `build_bims.R` output. The flags are customizable and allow the user to specify multiple different models for testing. We set the heritability score P-value threshold to above `1` so heritability is not filtered. The output for this script can be found in `{subregion}_gene/out_files/gene_{1:n gene windows}`.
 
+Beouse of limitation on SLURUM system, first by running bash script :
+```
+sh 3_0_preprocess_compute_weights_indv_Amygdala_full_gene_.sh 
+and/or 
+sh 3_0_preprocess_compute_weights_indv_sACC_full_gene_.sh
+```
+split the list of genes into smaller batches for parallel cluster submission, and create necessary symbolic links to define the input and output paths expected by the downstream FUSION TWAS software.
+
+Then, using SLURM array scripts:
+```
+('sbatch 3_compute_weights_indv_Amygdala_full_gene_1.sh' to 'sbatch 3_compute_weights_indv_Amygdala_full_gene_6.sh'automates the parallel computation of gene expression weights for 4,500 individual genes in the Amygdala region by dynamically loading each gene's localized PLINK data and executing the FUSION TWAS R script with four different statistical models (Top1, BLUP, LASSO, Enet). 
 ## 4) Merge Individual TWAS gene weights
 ```
 sbatch compute_weights_Amygdala_gene.sh
