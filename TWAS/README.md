@@ -24,7 +24,7 @@ This script is the second critical phase of a Transcriptome-Wide Association Stu
 
 Here, we make use of Gusev et al's `FUSION.compute_weights.R` script [[2](#references)], which produces expression weights one gene at a time, taking in the above `build_bims.R` output. The flags are customizable and allow the user to specify multiple different models for testing. We set the heritability score P-value threshold to above `1` so heritability is not filtered. The output for this script can be found in `{subregion}_gene/out_files/gene_{1:n gene windows}`.
 
-Beouse of limitation on SLURUM system, first by running bash script :
+Because of limitation on SLURUM system, first by running bash script :
 ```
 sh 3_0_preprocess_compute_weights_indv_Amygdala_full_gene_.sh 
 and/or 
