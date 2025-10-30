@@ -1,4 +1,4 @@
-## What is FUSION-TWAS ?
+# What is FUSION-TWAS ?
 
 - **Concept:** FUSION [[1](#references)] improved on original TWAS by better accounting for genetic architecture uncertainty and leveraging summary statistics exclusively.
 
@@ -10,6 +10,7 @@
 
 
 # MDD vs. BP TWAS Workflow
+
 This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. 
 
 Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[2](#references)].
