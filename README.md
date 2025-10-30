@@ -12,10 +12,18 @@ The molecular investigation of psychiatric disorders demands a focus on brain re
 
 Conversely, the sACC is critical for the executive regulation of mood, and transcriptional changes within this region are considered highly relevant to MDD and BP pathology [[2](#references)]. Transcriptomic analysis in these specific post-mortem brain regions—as opposed to heterogeneous cortical samples or peripheral blood—provides the highest biological fidelity by capturing the molecular consequences directly linked to the observed functional and structural dysregulation of mood circuitry. Studies focusing on these regions, such as a large-scale analysis involving 846 samples across 458 individuals in the sACC and Amygdala, demonstrate that these specific anatomical locations are indispensable for providing the initial mechanistic understanding of these disorders and highlighting potential drug targets[[5](#references)].   
 
-## MEthods used in this project
+## Methods used in this project
 
 ![Flowchart](https://github.com/karbalaei/MDD_BP/blob/main/graphs/Flowchart.jpg) 
 
+In this proect , these analysis has been done yet :
+
+- A- Find differentially expressed features( gene, transcripts, exon, junction) or **DEFs**.
+- B- Co-expressiopn networks analyzed using **WGCNA** package
+- C- **Gene-set enrichmnt** of DEFs.
+- D- Functional Summary-data ImputatiOn Transcriptome-Wide Association Studies (**Fusion-TWAS**) which is primarily designed to use GWAS summary statistics combined with expression weights calculated from a separate reference panel of individuals with both genotype and expression data. 
+- E- **IsoTWAS** which goes beyond gene-level expression and focuses on isoform-specific expression (ISE). This is crucial because different isoforms of the same gene can have distinct functions and tissue-specific regulation.
+- F- **Leafcutter** which is a computational tool designed to analyze splicing variation across samples and tissues, specifically focusing on intron usage.
 
 ## References
 1. Malik, S., Singh, R., Arora, G., Dangol, A. and Goyal, S., 2021. Biomarkers of major depressive disorder: knowing is half the battle. Clinical Psychopharmacology and Neuroscience, 19(1), p.12.
