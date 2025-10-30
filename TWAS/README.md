@@ -1,8 +1,3 @@
-# MDD vs. BP TWAS Workflow
-This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. 
-
-Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[2](#references)].
-
 ## What is FUSION-TWAS ?
 
 - **Concept:** FUSION [[1](#references)] improved on original TWAS by better accounting for genetic architecture uncertainty and leveraging summary statistics exclusively.
@@ -12,6 +7,13 @@ Specifically, this workflow details the procedures used to generate TWAS results
 - **Association Step:** It is optimized for GWAS summary statistics (Z-scores/P-values) and is highly efficient. It uses these statistics combined with an LD reference panel and the selected expression weights ($\mathbf{w}$) to calculate the TWAS Z-score, effectively asking if the genetic component predicting expression is correlated with the trait.
 
 - **Key Advantage:** Robustness across different genetic architectures due to testing multiple models.
+
+
+# MDD vs. BP TWAS Workflow
+This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. 
+
+Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[2](#references)].
+
 
 ## 1) Filter SNPs
 
