@@ -1,13 +1,11 @@
 #!/bin/bash
 #SBATCH -p shared
-#SBATCH --mem=50G
-#SBATCH --job-name=MDD_BP_Michael_method
+#SBATCH --mem=10G
+#SBATCH --job-name=twas_isotwas_enrichment
 #SBATCH -c 1
-#SBATCH -o logs/o_MDD_BP_Michael_method.txt
-#SBATCH -e logs/e_MDD_BP_Michael_method.txt
+#SBATCH -o ../logs/o_twas_isotwas_enrichment.txt
+#SBATCH -e ../logs/e_twas_isotwas_enrichment.txt
 #SBATCH --mail-type=ALL
-
-set -e
 
 echo "**** Job starts ****"
 date
@@ -20,13 +18,13 @@ echo "Node name: ${SLURMD_NODENAME}"
 echo "Task id: ${SLURM_ARRAY_TASK_ID}"
 
 ## Load the R module
-module load conda_R/4.3
+module load conda_R/4.4
 
 ## List current modules for reproducibility
 module list
 
 ## Edit with your job command
-Rscript MDD_BP_Michael_method.R
+Rscript twas_isotwas_enrichment.R
 
 echo "**** Job ends ****"
 date

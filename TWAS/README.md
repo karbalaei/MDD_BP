@@ -3,6 +3,16 @@ This directory contains the computational workflow for the summary-TWAS (Transcr
 
 Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[2](#references)].
 
+## What is FUSION-TWAS ?
+
+- **Concept:** FUSION [[1](#references)] improved on original TWAS by better accounting for genetic architecture uncertainty and leveraging summary statistics exclusively.
+
+- **Prediction Model:** FUSION addresses the uncertainty of genetic architecture (how many SNPs affect expression) by training **multiple distinct prediction models** (e.g., BLUP, BSLMM, LASSO, Elastic Net, Top-eQTL) for the same gene. It then selects the best-performing model (based on cross-validation $\text{R}^2$) for the TWAS test, or combines them (Omnibus test).
+
+- **Association Step:** It is optimized for GWAS summary statistics (Z-scores/P-values) and is highly efficient. It uses these statistics combined with an LD reference panel and the selected expression weights ($\mathbf{w}$) to calculate the TWAS Z-score, effectively asking if the genetic component predicting expression is correlated with the trait.
+
+- **Key Advantage:** Robustness across different genetic architectures due to testing multiple models.
+
 ## 1) Filter SNPs
 
 ```
