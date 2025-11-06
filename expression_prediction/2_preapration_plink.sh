@@ -14,7 +14,7 @@ cd ../twas/Amygdala_gene
 find ./score -type f -name "*.txt" -exec basename {} \; > ./Amygdala_gene_list_score.txt
 
 # Define the output directory
-OUTPUT_DIR="./score"
+OUTPUT_DIR="./expression_prediction"
 mkdir -p ${OUTPUT_DIR}
 
 split -l 5000 --numeric-suffixes=1 --suffix-length=1 --additional-suffix=.txt ./Amygdala_gene_list_score.txt ./Amygdala_gene_list_score_
@@ -24,7 +24,7 @@ cd ../sACC_gene
 find ./score -type f -name "*.txt" -exec basename {} \; > ./sACC_gene_list_score.txt
 
 # Define the output directory
-OUTPUT_DIR="./score"
+OUTPUT_DIR="./expression_prediction"
 mkdir -p ${OUTPUT_DIR}
 
 split -l 5000 --numeric-suffixes=1 --suffix-length=1 --additional-suffix=.txt ./sACC_gene_list_score.txt ./sACC_gene_list_score_
