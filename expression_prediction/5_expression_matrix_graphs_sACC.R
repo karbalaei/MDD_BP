@@ -3,10 +3,10 @@ library(here)
 
 
 # --- 1. Define Paths and Files ---
-file_list_path <- here("twas/Amygdala_gene" , "Amygdala_gene_list_prediced.txt.profile")
-output_file <- here("twas/Amygdala_gene","merged_prediced_expression_Amygdala.tsv")
+file_list_path <- here("twas/Amygdala_gene" , "sACC_gene_list_prediced.txt.profile")
+output_file <- here("twas/sACC_gene","merged_prediced_expression_sACC.tsv")
 
-INPUT_DIR <- here("twas/Amygdala_gene", "expression_prediction")
+INPUT_DIR <- here("twas/sACC_gene", "expression_prediction")
 
 # Read the list of files to merge
 files_to_merge <- readLines(file_list_path)
@@ -22,7 +22,7 @@ extract_gene_name <- function(filename) {
 
 # Read the first file to initialize the master data table
 cat("Reading and initializing with:", files_to_merge[1], "\n")
-master_dt <- fread(here("twas/Amygdala_gene/expression_prediction", files_to_merge[1]), select = c(1, 2, 6)) # Select Col 1, 2, and 6
+master_dt <- fread(here("twas/sACC_gene/expression_prediction", files_to_merge[1]), select = c(1, 2, 6)) # Select Col 1, 2, and 6
 setnames(master_dt, c("ID1", "ID2", extract_gene_name(files_to_merge[1])))
 
 # Iterate through the rest of the files (starting from the second file)
@@ -34,7 +34,7 @@ for (i in 2:length(files_to_merge)) {
   cat("Merging:", current_gene, "\n")
   
   # Read the current file, selecting only the necessary columns
-  current_dt <- fread(here("twas/Amygdala_gene/expression_prediction", files_to_merge[i]),
+  current_dt <- fread(here("twas/sACC_gene/expression_prediction", files_to_merge[i]),
 					select = c(1, 2, 6))
   # Rename columns immediately for merging
   setnames(current_dt, c("ID1", "ID2", current_gene))
