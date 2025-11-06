@@ -17,25 +17,16 @@ find ./score -type f -name "*.txt" -exec basename {} \; > ./Amygdala_gene_list_s
 OUTPUT_DIR="./score"
 mkdir -p ${OUTPUT_DIR}
 
-#Rscript make_score.R [wgt.RDat file] > [SCORE_FILE] 
-
-#plink --bfile [GENOTYPES] --score [SCORE_FILE] 1 2 4
-
-
 split -l 5000 --numeric-suffixes=1 --suffix-length=1 --additional-suffix=.txt ./Amygdala_gene_list_score.txt ./Amygdala_gene_list_score_
 
 cd ../sACC_gene
 
-find ./score -type f -name "*.wgt.RDat" -exec basename {} \; > ./sACC_gene_list_score.txt
-
-
-#Rscript make_score.R [wgt.RDat file] > [SCORE_FILE] 
-
-#plink --bfile [GENOTYPES] --score [SCORE_FILE] 1 2 4
-
-
-split -l 5000 --numeric-suffixes=1 --suffix-length=1 --additional-suffix=.txt ./sACC_gene_list_score.txt ./sACC_gene_list_score_
+find ./score -type f -name "*.txt" -exec basename {} \; > ./sACC_gene_list_score.txt
 
 # Define the output directory
 OUTPUT_DIR="./score"
 mkdir -p ${OUTPUT_DIR}
+
+split -l 5000 --numeric-suffixes=1 --suffix-length=1 --additional-suffix=.txt ./sACC_gene_list_score.txt ./sACC_gene_list_score_
+
+
