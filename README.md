@@ -1,11 +1,11 @@
 ## Why BP vs. MDD?
 
-Knowing the genomic differences between Major Depressive Disorder (MDD) and Bipolar Disorder (BP) is critically important, primarily to improve diagnosis, guide treatment selection, and enhance our fundamental understanding of these distinct conditions.
+Knowing the genomic differences between **Major Depressive Disorder** (MDD) and **Bipolar Disorder** (BP) is critically important, primarily to improve diagnosis, guide treatment selection, and enhance our fundamental understanding of these distinct conditions.
 
 The genomic differences are crucial for several reasons:
-* Accurate and Early Differential Diagnosis 
-* ersonalized and Effective Treatment
-* Understanding Disease Biology
+* Accurate and Early Differential Diagnosis [[1 ,2 ](#references)]  
+* ersonalized and Effective Treatment [[1](#references)]
+* Understanding Disease Biology [[2](#references)]
 
 ## Why Amygdala and sgACC?
 The **amygdala** and the **subgenual anterior cingulate cortex (sgACC)** are two of the most consistently implicated brain regions in the neurobiology of mood disorders like Major Depressive Disorder (MDD) and Bipolar Disorder (BP). They are critical components of the brain's **limbic system**, which is essential for emotional processing and regulation.
@@ -101,4 +101,5 @@ In this proect , these analysis has been done yet :
 You can find more datails in their specific pages. 
 
 ## References
-1. 
+1. Panagiotaropoulou, G. et al. (2025) ‘Identifying genetic differences between bipolar disorder and major depression through multiple genome-wide association analyses’, The British Journal of Psychiatry, 226(2), pp. 79–90. doi:10.1192/bjp.2024.125.
+2. Yang, R., Zhao, Y., Tan, Z., Lai, J., Chen, J., Zhang, X., Sun, J., Chen, L., Lu, K., Cao, L. and Liu, X., 2023. Differentiation between bipolar disorder and major depressive disorder in adolescents: from clinical to biological biomarkers. Frontiers in human neuroscience, 17, p.1192544.
