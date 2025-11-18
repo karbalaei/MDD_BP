@@ -3,7 +3,7 @@ library(here)
 
 
 # --- 1. Define Paths and Files ---
-file_list_path <- here("twas/Amygdala_gene" , "sACC_gene_list_prediced.txt.profile")
+file_list_path <- here("twas/sACC_gene" , "sACC_gene_list_prediced.txt")
 output_file <- here("twas/sACC_gene","merged_prediced_expression_sACC.tsv")
 
 INPUT_DIR <- here("twas/sACC_gene", "expression_prediction")
