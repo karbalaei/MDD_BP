@@ -4,8 +4,8 @@ Knowing the genomic differences between **Major Depressive Disorder** (MDD) and 
 
 The genomic differences are crucial for several reasons:
 * Accurate and Early Differential Diagnosis [[1 ,2 ](#references)]  
-* ersonalized and Effective Treatment [[1](#references)]
-* Understanding Disease Biology [[2](#references)]
+* Personalized and Effective Treatment [[3 ,4](#references)]
+* Understanding Disease Biology [[5](#references)]
 
 ## Why Amygdala and sgACC?
 The **amygdala** and the **subgenual anterior cingulate cortex (sgACC)** are two of the most consistently implicated brain regions in the neurobiology of mood disorders like Major Depressive Disorder (MDD) and Bipolar Disorder (BP). They are critical components of the brain's **limbic system**, which is essential for emotional processing and regulation.
@@ -103,3 +103,6 @@ You can find more datails in their specific pages.
 ## References
 1. Panagiotaropoulou, G. et al. (2025) ‘Identifying genetic differences between bipolar disorder and major depression through multiple genome-wide association analyses’, The British Journal of Psychiatry, 226(2), pp. 79–90. doi:10.1192/bjp.2024.125.
 2. Yang, R., Zhao, Y., Tan, Z., Lai, J., Chen, J., Zhang, X., Sun, J., Chen, L., Lu, K., Cao, L. and Liu, X., 2023. Differentiation between bipolar disorder and major depressive disorder in adolescents: from clinical to biological biomarkers. Frontiers in human neuroscience, 17, p.1192544.
+3. Tonozzi, T. R. et al. (2018) ‘Pharmacogenetic Profile and Major Depressive and/or Bipolar Disorder Treatment: a Retrospective, Cross-Sectional Study’, Pharmacogenomics, 19(15), pp. 1169–1179. doi: 10.2217/pgs-2018-0088.
+4. Wilcox, C., 2020. Can Genetics Help Us Distinguish Bipolar Disorder from Major Depression?. NEJM Journal Watch, p.NA51036.
+5. Panagiotaropoulou, G., Hellberg, K.L.G., Coleman, J.R., Seok, D., Kalman, J., Mitchell, P.B., Schofield, P.R., Forstner, A.J., Bauer, M., Scott, L.J. and Pato, C.N., 2025. Identifying genetic differences between bipolar disorder and major depression through multiple genome-wide association analyses. The British Journal of Psychiatry, 226(2), pp.79-90.
