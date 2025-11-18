@@ -3,9 +3,9 @@
 Knowing the genomic differences between Major Depressive Disorder (MDD) and Bipolar Disorder (BP) is critically important, primarily to improve diagnosis, guide treatment selection, and enhance our fundamental understanding of these distinct conditions.
 
 The genomic differences are crucial for several reasons:
-* **Accurate and Early Differential Diagnosis
-* **Personalized and Effective Treatment
-* **Understanding Disease Biology
+* Accurate and Early Differential Diagnosis 
+* ersonalized and Effective Treatment
+* Understanding Disease Biology
 
 ## Why Amygdala and sgACC?
 The **amygdala** and the **subgenual anterior cingulate cortex (sgACC)** are two of the most consistently implicated brain regions in the neurobiology of mood disorders like Major Depressive Disorder (MDD) and Bipolar Disorder (BP). They are critical components of the brain's **limbic system**, which is essential for emotional processing and regulation.
@@ -83,3 +83,22 @@ Current research is moving toward these higher-resolution approaches to solve th
 * **Transcriptome-Wide Association Studies (TWAS) and RNA-seq:** Large-scale studies integrating genomic and transcriptomic data (RNA sequencing or RNA-seq) are being used to identify differential expression, not just at the gene level but across the entire transcriptome. These analyses specifically aim to identify biomarkers for **differential diagnosis** (Reference 2.3, 2.4).
 * **Unique Regulatory Programs:** Large-scale transcriptomic analyses comparing MDD, BP, and Schizophrenia found that each disorder is regulated by a distinct set of **transcription factors**, confirming unique molecular signatures underlying the shared and distinct clinical presentations (Reference 1.4, 2.1).
 * **Focus on Splicing:** Studies recognize that NGS (Next-Generation Sequencing) approaches like RNA-seq are more accurate and crucial because they can **detect alternative splicing** and measure differences in splicing events, which are known to be significant contributors to neuropsychiatric disorders (Reference 3.4).
+
+
+## Methods used in this project
+
+![Flowchart](https://github.com/karbalaei/MDD_BP/blob/main/graphs/Flowchart.jpg) 
+
+In this proect , these analysis has been done yet :
+
+- A- Find differentially expressed features( gene, transcripts, exon, junction) or **DEFs**.
+- B- Co-expressiopn networks analyzed using **WGCNA** package
+- C- **Gene-set enrichmnt** of DEFs.
+- D- Functional Summary-data ImputatiOn Transcriptome-Wide Association Studies (**Fusion-TWAS**) which is primarily designed to use GWAS summary statistics combined with expression weights calculated from a separate reference panel of individuals with both genotype and expression data. 
+- E- **IsoTWAS** which goes beyond gene-level expression and focuses on isoform-specific expression (ISE). This is crucial because different isoforms of the same gene can have distinct functions and tissue-specific regulation.
+- F- **Leafcutter** which is a computational tool designed to analyze splicing variation across samples and tissues, specifically focusing on intron usage.
+
+You can find more datails in their specific pages. 
+
+## References
+1. 
