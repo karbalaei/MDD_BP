@@ -91,12 +91,12 @@ Current research is moving toward these higher-resolution approaches to solve th
 
 In this proect , these analysis has been done yet :
 
-- A- Find differentially expressed features( gene, transcripts, exon, junction) or **DEFs**. [Link](https://github.com/karbalaei/MDD_BP/tree/main/Diffierentially%20expression)
-- B- Co-expressiopn networks analyzed using **WGCNA** package
-- C- **Gene-set enrichmnt** of DEFs.
-- D- Functional Summary-data ImputatiOn Transcriptome-Wide Association Studies (**Fusion-TWAS**) which is primarily designed to use GWAS summary statistics combined with expression weights calculated from a separate reference panel of individuals with both genotype and expression data. 
-- E- **IsoTWAS** which goes beyond gene-level expression and focuses on isoform-specific expression (ISE). This is crucial because different isoforms of the same gene can have distinct functions and tissue-specific regulation.
-- F- **Leafcutter** which is a computational tool designed to analyze splicing variation across samples and tissues, specifically focusing on intron usage.
+- Find differentially expressed features( gene, transcripts, exon, junction) or **DEFs**. [Link](https://github.com/karbalaei/MDD_BP/tree/main/Diffierentially%20expression)
+- Co-expressiopn networks analyzed using **WGCNA** package [link](https://github.com/karbalaei/MDD_BP/tree/main/wgcna)
+- **Gene-set enrichmnt** of DEFs. [link](https://github.com/karbalaei/MDD_BP/tree/main/gene%20set%20enrichmnet)
+- Functional Summary-data ImputatiOn Transcriptome-Wide Association Studies (**Fusion-TWAS**) which is primarily designed to use GWAS summary statistics combined with expression weights calculated from a separate reference panel of individuals with both genotype and expression data. [link](https://github.com/karbalaei/MDD_BP/tree/main/TWAS)
+- **IsoTWAS** which goes beyond gene-level expression and focuses on isoform-specific expression (ISE). This is crucial because different isoforms of the same gene can have distinct functions and tissue-specific regulation. [link](https://github.com/karbalaei/MDD_BP/tree/main/isoTWAS)
+- **Leafcutter** which is a computational tool designed to analyze splicing variation across samples and tissues, specifically focusing on intron usage. [link](https://github.com/karbalaei/MDD_BP/tree/main/leafcutter)
 
 You can find more datails in their specific pages. 
 
