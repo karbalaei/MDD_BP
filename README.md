@@ -91,7 +91,7 @@ Current research is moving toward these higher-resolution approaches to solve th
 
 In this proect , these analysis has been done yet :
 
-- A- Find differentially expressed features( gene, transcripts, exon, junction) or **DEFs**. ![Link](https://github.com/karbalaei/MDD_BP/tree/main/Diffierentially%20expression)
+- A- Find differentially expressed features( gene, transcripts, exon, junction) or **DEFs**. [Link](https://github.com/karbalaei/MDD_BP/tree/main/Diffierentially%20expression)
 - B- Co-expressiopn networks analyzed using **WGCNA** package
 - C- **Gene-set enrichmnt** of DEFs.
 - D- Functional Summary-data ImputatiOn Transcriptome-Wide Association Studies (**Fusion-TWAS**) which is primarily designed to use GWAS summary statistics combined with expression weights calculated from a separate reference panel of individuals with both genotype and expression data. 
