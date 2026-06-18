@@ -1,12 +1,14 @@
 # 🧬 What is isoTWAS?
 
-- **The Concept**: Traditional TWAS evaluates associations at the aggregate gene level, which can obscure critical disease mechanisms. **isoTWAS** extends this framework by shifting the resolution to **isoform-specific expression (ISE)** and transcript-level features. This approach is uniquely powerful for distinguishing complex psychiatric conditions like MDD and BP, where alternative splicing and variable transcript usage often drive pathobiology even when total gene-level expression remains unchanged.
+- **The Concept**: Traditional TWAS evaluates associations at the aggregate gene level, which can obscure critical disease mechanisms. **isoTWAS** extends this framework by shifting the resolution to **isoform-specific expression (ISE)** and transcript-level features[[1](#references)]. This approach is uniquely powerful for distinguishing complex psychiatric conditions like MDD and BP, where alternative splicing and variable transcript usage often drive pathobiology even when total gene-level expression remains unchanged.
 
 - **Prediction Models** : Similar to gene-level frameworks, isoTWAS trains predictive models (such as Elastic Net, LASSO, and Blended architectures) to estimate the genetically regulated component of expression—but does so independently for individual transcripts or isoforms.
 
 - **Association Step**: By integrating transcript-specific predictive weights ($\mathbf{w}$) with major GWAS summary statistics (e.g., PGC or 23andMe) and an LD reference panel, isoTWAS computes isoform-level association $Z$-scores. This identifies specific transcript variations that are significantly correlated with phenotypic risk, allowing for high-resolution molecular mapping.
 
-🛠️ MDD vs. BP isoTWAS WorkflowFollow the sequential steps below to execute the transcript-level pipeline: [[1](#references)].
+## 🛠️ MDD vs. BP isoTWAS Workflow
+
+Follow the sequential steps below to execute the transcript-level pipeline: [[1](#references)].
 
 ## 1) Filter SNPs
 
@@ -87,6 +89,6 @@ sbatch run_generate_twas_plots.sh
 This script generates a number of different plots and outputs their corresponding tables into `analysis/plots/` and `analysis/tables/`, respectively.
 
 ## References
-1. Gusev, A., Ko, A., Shi, H., Bhatia, G., Chung, W., Penninx, B.W., Jansen, R., De Geus, E.J., Boomsma, D.I., Wright, F.A. and Sullivan, P.F., 2016. Integrative approaches for large-scale transcriptome-wide association studies. Nature genetics, 48(3), pp.245-252. https://www.nature.com/articles/ng.3506
-2. O’Connell, K.S., Koromina, M., van der Veen, T., Boltz, T., David, F.S., Yang, J.M.K., Lin, K.H., Wang, X., Coleman, J.R., Mitchell, B.L. and McGrouther, C.C., 2025. Genomics yields biological and phenotypic insights into bipolar disorder. Nature, 639(8056), pp.968-975. https://www.nature.com/articles/s41586-024-08468-9  
-3. Yu G, Wang L, Han Y, He Q (2012). “clusterProfiler: an R package for comparing biological themes among gene clusters.” OMICS: A Journal of Integrative Biology, 16(5), 284-287. doi: 10.1089/omi.2011.0118.
+1- Bhattacharya, A. et al. (2022) 'isoTWAS: Transcript-level transcriptome-wide association studies via structured lasso and blended learning', Genetics, 222(4), p.iyac145. doi:10.1093/genetics/iyac145.
+
+2- Gandal, M. J. et al. (2018) 'Transcriptome-wide isoforms-level imbalances in the brains of individuals with severe mental illnesses', Science, 362(6420), p.eaat8127. doi:10.1126/science.aat8127.
