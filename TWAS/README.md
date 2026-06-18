@@ -63,10 +63,10 @@ sbatch 3_compute_weights_indv_sACC_full_gene_1.sh     # through 6
 
 ```
 
-## 4) Merge Individual TWAS gene weights
+## 4) Merge Individual Gene Weights
+Aggregates the individual expression weights calculated across the thousands of parallel cluster slots. It references the underlying architecture by constructing a global index file (pos_info.Rdata) and generates model fit diagnostics via FUSION performance profiles.
 
-The results from step #3 are merged together by generating an index `pos_info.Rdata`. `FUSION.profile_wgt.R` from Gusev et al.'s TWAS workflow is also called to produce a per-gene profile with summary of the data and model performance in `{subregion}_gene.profile.err`.
-
+- **Outputs** : Combined weights cataloged in {subregion}_gene.profile.err.
 ```
 sbatch compute_weights_Amygdala_gene.sh
 # and/or
