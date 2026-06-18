@@ -39,7 +39,7 @@ sbatch 1_filter_snps_sacc_gene.sh
 ## 2) Build Gene-Level PLINK Files
 Prepares localized window boundaries for FUSION. This script uses a linear model to regress out known covariates (sex, population structure PCs, expression PCs) to yield "cleaned expression" residuals. It then applies a structural spatial filter, capturing all SNPs within a 1 Mb cis-regulatory window (500 kb upstream/downstream of the gene body) using parallel processing (BiocParallel).
 
-Outputs: Thousands of independent gene subdirectories stored in {subregion}_gene/bim_files/ containing localized PLINK inputs with expression residuals designated as the phenotype.
+- **Outputs** : Thousands of independent gene subdirectories stored in {subregion}_gene/bim_files/ containing localized PLINK inputs with expression residuals designated as the phenotype.
 
 ```
 sh 2_build_bims_Amygdala_gene.sh
