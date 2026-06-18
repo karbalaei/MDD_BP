@@ -38,6 +38,8 @@ sbatch 1_filter_snps_sacc_gene.sh
 ```
 
 
+---
+
 ## 2) Build Gene-Level PLINK Files
 Prepares localized window boundaries for FUSION. This script uses a linear model to regress out known covariates (sex, population structure PCs, expression PCs) to yield "cleaned expression" residuals. It then applies a structural spatial filter, capturing all SNPs within a **1 Mb cis-regulatory window** (500 kb upstream/downstream of the gene body) using parallel processing (`BiocParallel`).
 
@@ -48,6 +50,8 @@ sh 2_build_bims_Amygdala_gene.sh
 # and/or
 sh 2_build_bims_sACC_gene.sh
 ```
+
+---
 
 ## 3) Compute Local Expression Weights
 
@@ -65,6 +69,8 @@ sbatch 3_compute_weights_indv_sACC_full_gene_1.sh     # through 6
 
 ```
 
+---
+
 ## 4) Merge Individual Gene Weights
 Aggregates the individual expression weights calculated across the thousands of parallel cluster slots. It references the underlying architecture by constructing a global index file (`pos_info.Rdata`) and generates model fit diagnostics via FUSION performance profiles.
 
@@ -76,6 +82,8 @@ sbatch compute_weights_sACC_gene.sh
 ```
 
 
+---
+
 ## 5) Process hg38 GWAS Summary Statistics
 
 Standardizes external GWAS files mapped to the hg38 reference genome. This calculates uniform $Z$-scores across all represented variants, filters out incompatible or missing columns, and generates diagnostic metrics (e.g., $Z$-score and log odds ratio frequency distributions).
@@ -85,6 +93,8 @@ sbatch run_process-gwas.sh
 ```
 
 
+---
+
 ## 6) Apply Weights (Imputation & Association)
 
 Performs expression imputation and calculates trait associations using `FUSION.assoc_test.R`. Downstream dependencies trigger `FUSION.post_process.R` to run joint/conditional tests across regions with dense signals, helping distinguish independent eQTL effects from passenger correlations.
@@ -93,6 +103,8 @@ Performs expression imputation and calculates trait associations using `FUSION.a
 sh apply_weights.sh
 ```
 
+
+---
 
 ## 7) Aggregate Regional TWAS Output
 Harvests all calculated association outputs across both the `sACC` and `amygdala` analytical arms, formatting and consolidating them into an evaluation archive.
@@ -105,6 +117,8 @@ sbatch run_read_twas_sacc.sh
 ```
 
 
+---
+
 ## 8) Diagnostic Plotting & Visualization
 Generates standard multi-omic overview plots, regional association charts, and summary matrices.
 
@@ -114,6 +128,8 @@ Outputs: Rendered graphics and statistics mapped directly to `analysis/plots/` a
 sbatch run_generate_twas_plots.sh
 ```
 
+
+---
 
 ## References
 1. Gusev, A., Ko, A., Shi, H., Bhatia, G., Chung, W., Penninx, B.W., Jansen, R., De Geus, E.J., Boomsma, D.I., Wright, F.A. and Sullivan, P.F., 2016. Integrative approaches for large-scale transcriptome-wide association studies. Nature genetics, 48(3), pp.245-252. https://www.nature.com/articles/ng.3506
