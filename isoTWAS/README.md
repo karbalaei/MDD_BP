@@ -4,7 +4,7 @@
 
 - **Prediction Models** : Similar to gene-level frameworks, isoTWAS trains predictive models (such as Elastic Net, LASSO, and Blended architectures) to estimate the genetically regulated component of expression—but does so independently for individual transcripts or isoforms[[1](#references)].
 
-- **Association Step**: By integrating transcript-specific predictive weights ($\mathbf{w}$) with major GWAS summary statistics (e.g., PGC or 23andMe) and an LD reference panel, isoTWAS computes isoform-level association $Z$-scores[[1](#references)]. This identifies specific transcript variations that are significantly correlated with phenotypic risk, allowing for high-resolution molecular mapping[[1 و 2](#references)].
+- **Association Step**: By integrating transcript-specific predictive weights ($\mathbf{w}$) with major GWAS summary statistics (e.g., PGC or 23andMe) and an LD reference panel, isoTWAS computes isoform-level association $Z$-scores[[1](#references)]. This identifies specific transcript variations that are significantly correlated with phenotypic risk, allowing for high-resolution molecular mapping[[1 , 2 ](#references)].
 
 ## 🛠️ MDD vs. BP isoTWAS Workflow
 
