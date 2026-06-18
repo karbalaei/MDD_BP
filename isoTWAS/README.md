@@ -120,7 +120,7 @@ Rscript 7_FDR_calculaton_isotwas.R --region "sACC" --diag "MDD"
 
 ```
 
-## References
+### References
 1- Bhattacharya, A. et al. (2022) 'isoTWAS: Transcript-level transcriptome-wide association studies via structured lasso and blended learning', Genetics, 222(4), p.iyac145. doi:10.1093/genetics/iyac145.
 
 2- Gandal, M. J. et al. (2018) 'Transcriptome-wide isoforms-level imbalances in the brains of individuals with severe mental illnesses', Science, 362(6420), p.eaat8127. doi:10.1126/science.aat8127.
