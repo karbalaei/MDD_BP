@@ -51,7 +51,7 @@ The structured analytical workflow implemented in this repository is outlined be
 
 Click the links below to access the code, documentation, and specific results for each step of the pipeline:
 
-* **Differential Expression Analysis:** Identification of Differentially Expressed Features (**DEFs**) across genes, transcripts, exons, and junctions.
+* [**Differential Expression Analysis:**](Diffierentially_expression_feature) Identification of Differentially Expressed Features (**DEFs**) across genes, transcripts, exons, and junctions.
 * **WGCNA Network Analysis:** Construction of weighted gene co-expression networks to find highly correlated feature modules.
 * **Gene-Set Enrichment:** Functional enrichment and pathway mapping of identified DEFs.
 * **Fusion-TWAS:** Transcriptome-Wide Association Studies integrating GWAS summary statistics with reference expression weights.
