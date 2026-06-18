@@ -14,6 +14,7 @@ This directory contains the computational workflow for the summary-based Transcr
   * **Top-eQTL** (single top SNP model)
   
   The framework uses cross-validation $R^2$ to select the best-performing model for the association test, or combines them via an Omnibus test.
+
 * **Association Step:** FUSION is highly optimized for GWAS summary statistics ($Z$-scores or $P$-values). It combines these stats with a linkage disequilibrium (LD) reference panel and pre-computed expression weights ($\mathbf{w}$) to calculate a final TWAS $Z$-score, assessing whether the predicted genetic component of gene expression correlates with the trait.
 
 ---
@@ -26,6 +27,7 @@ Follow the sequential steps below to execute the pipeline:
 
 ### 1) Filter SNPs & Match Formats
 Processes the raw genotype and discovery RNA-Seq datasets. It subsets data to the specific brain region, computes RPKM, and corrects for latent confounding factors using Principal Component Analysis (PCA) and Surrogate Variable Analysis via the `sva` package. Concurrently, it extracts corresponding samples from the raw PLINK files and standardizes SNP identifiers in the `.bim` file.
+
 * **Outputs:** Matched, cleaned `.bed`, `.fam`, and `.bim` files ready for expression modeling.
 
 ```bash
@@ -49,7 +51,7 @@ sh 2_build_bims_sACC_gene.sh
 
 ## 3) Compute Local Expression Weights
 
-Executes the core FUSION weight computation pipeline (FUSION.compute_weights.R) to model cis-eQTL genetic architectures [1]. The heritability $P$-value threshold is set to 1 to prevent aggressive filtering of low-heritability features at early stages.
+Executes the core FUSION weight computation pipeline ( `FUSION.compute_weights.R` ) to model cis-eQTL genetic architectures [1]. The heritability $P$-value threshold is set to `1` to prevent aggressive filtering of low-heritability features at early stages.
 
 - **Note on Cluster Scheduling** : Due to SLURM step limitations, individual batch arrays are dynamically chunked to execute smoothly.
 ```
@@ -64,9 +66,9 @@ sbatch 3_compute_weights_indv_sACC_full_gene_1.sh     # through 6
 ```
 
 ## 4) Merge Individual Gene Weights
-Aggregates the individual expression weights calculated across the thousands of parallel cluster slots. It references the underlying architecture by constructing a global index file (pos_info.Rdata) and generates model fit diagnostics via FUSION performance profiles.
+Aggregates the individual expression weights calculated across the thousands of parallel cluster slots. It references the underlying architecture by constructing a global index file (`pos_info.Rdata`) and generates model fit diagnostics via FUSION performance profiles.
 
-- **Outputs** : Combined weights cataloged in {subregion}_gene.profile.err.
+- **Outputs** : Combined weights cataloged in `{subregion}_gene.profile.err`.
 ```
 sbatch compute_weights_Amygdala_gene.sh
 # and/or
@@ -77,6 +79,7 @@ sbatch compute_weights_sACC_gene.sh
 ## 5) Process hg38 GWAS Summary Statistics
 
 Standardizes external GWAS files mapped to the hg38 reference genome. This calculates uniform $Z$-scores across all represented variants, filters out incompatible or missing columns, and generates diagnostic metrics (e.g., $Z$-score and log odds ratio frequency distributions).
+
 ```
 sbatch run_process-gwas.sh
 ```
@@ -84,7 +87,7 @@ sbatch run_process-gwas.sh
 
 ## 6) Apply Weights (Imputation & Association)
 
-Performs expression imputation and calculates trait associations using FUSION.assoc_test.R. Downstream dependencies trigger FUSION.post_process.R to run joint/conditional tests across regions with dense signals, helping distinguish independent eQTL effects from passenger correlations.
+Performs expression imputation and calculates trait associations using `FUSION.assoc_test.R`. Downstream dependencies trigger `FUSION.post_process.R` to run joint/conditional tests across regions with dense signals, helping distinguish independent eQTL effects from passenger correlations.
 
 ```
 sh apply_weights.sh
