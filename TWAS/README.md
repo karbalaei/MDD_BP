@@ -1,68 +1,66 @@
-# What is FUSION-TWAS ?
+# Transcriptome-Wide Association Studies (TWAS) Pipeline
 
-- **Concept:** FUSION [[1](#references)] improved on original TWAS by better accounting for genetic architecture uncertainty and leveraging summary statistics exclusively.
+This directory contains the computational workflow for the summary-based Transcriptome-Wide Association Study (TWAS) conducted on Bipolar Disorder (BP) and Major Depressive Disorder (MDD) cohorts. This analysis utilizes RNA-Seq expression profiles from two critical brain regions—the **amygdala** and the **subgenual anterior cingulate cortex (sgACC)**—to identify genetically regulated gene expression variations associated with these mood disorders.
 
-- **Prediction Model:** FUSION addresses the uncertainty of genetic architecture (how many SNPs affect expression) by training **multiple distinct prediction models** (e.g., BLUP, BSLMM, LASSO, Elastic Net, Top-eQTL) for the same gene. It then selects the best-performing model (based on cross-validation $\text{R}^2$) for the TWAS test, or combines them (Omnibus test).
+---
 
-- **Association Step:** It is optimized for GWAS summary statistics (Z-scores/P-values) and is highly efficient. It uses these statistics combined with an LD reference panel and the selected expression weights ($\mathbf{w}$) to calculate the TWAS Z-score, effectively asking if the genetic component predicting expression is correlated with the trait.
+## 🧬 What is FUSION-TWAS?
 
-- **Key Advantage:** Robustness across different genetic architectures due to testing multiple models.
+* **The Concept:** FUSION [[1](#references)] improves upon traditional TWAS frameworks by better accounting for the uncertainty of complex local genetic architectures and leveraging summary statistics exclusively.
+* **Prediction Models:** To capture varying underlying genetic models (e.g., sparse vs. highly polygenic effects), FUSION trains **multiple distinct prediction models** simultaneously for each gene:
+  * **BLUP** (Best Linear Unbiased Predictor)
+  * **BSLMM** (Bayesian Sparse Linear Mixed Model)
+  * **LASSO** / **Elastic Net**
+  * **Top-eQTL** (single top SNP model)
+  
+  The framework uses cross-validation $R^2$ to select the best-performing model for the association test, or combines them via an Omnibus test.
+* **Association Step:** FUSION is highly optimized for GWAS summary statistics ($Z$-scores or $P$-values). It combines these stats with a linkage disequilibrium (LD) reference panel and pre-computed expression weights ($\mathbf{w}$) to calculate a final TWAS $Z$-score, assessing whether the predicted genetic component of gene expression correlates with the trait.
 
+---
 
-# MDD vs. BP TWAS Workflow
+## 🛠️ MDD vs. BP TWAS Workflow
 
-This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. 
+This workflow processes local RNA-Seq datasets alongside public-facing genetic datasets, leveraging the Bipolar Disorder and MDD GWAS summary data from the Psychiatric Genomics Consortium (PGC) and 23andMe meta-analyses [[2](#references)].
 
-Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[2](#references)].
+Follow the sequential steps below to execute the pipeline:
 
+### 1) Filter SNPs & Match Formats
+Processes the raw genotype and discovery RNA-Seq datasets. It subsets data to the specific brain region, computes RPKM, and corrects for latent confounding factors using Principal Component Analysis (PCA) and Surrogate Variable Analysis via the `sva` package. Concurrently, it extracts corresponding samples from the raw PLINK files and standardizes SNP identifiers in the `.bim` file.
+* **Outputs:** Matched, cleaned `.bed`, `.fam`, and `.bim` files ready for expression modeling.
 
-## 1) Filter SNPs
-
-
-The first step is the  processes gene expression (RNA-seq) data, subsetting it to the chosen brain region, calculating RPKM (Reads Per Kilobase Million), and using Principal Component Analysis (PCA) and the sva package to estimate and correct for major confounding factors (Gene PCs), storing the processed expression data. Simultaneously, it uses the common samples to subset the raw genotype data (in PLINK format), extracts the relevant samples, and crucially, ensures that all Single Nucleotide Polymorphism (SNP) identifiers are unique by modifying and overwriting the PLINK .bim file. The final output is a set of carefully matched and corrected gene expression and genotype files (`.bed`, `.fam` and `.bim` files), ready for downstream TWAS modeling.
-
-```
-# We should run :
+```bash
+# Execute for the desired brain region:
 sbatch 1_filter_snps_amygdala_gene.sh
 # and/or
 sbatch 1_filter_snps_sacc_gene.sh
-# which will running 1_filter_snps_gene.R
 ```
 
 
-## 2) Build gene-level PLINK .bed files
+## 2) Build Gene-Level PLINK Files
+Prepares localized window boundaries for FUSION. This script uses a linear model to regress out known covariates (sex, population structure PCs, expression PCs) to yield "cleaned expression" residuals. It then applies a structural spatial filter, capturing all SNPs within a 1 Mb cis-regulatory window (500 kb upstream/downstream of the gene body) using parallel processing (BiocParallel).
 
-In this step the input files for the FUSION software is prepares. It first loads the previously processed gene expression data for a user-specified brain region, then applies a rigorous cleaning step using a linear model to regress out the effects of known and estimated confounders (like sex, population structure PCs, and expression PCs), resulting in **"cleaned expression" residuals**. Next, the script spatially filters the genes, keeping only those with at least **one SNP within a 1 Mb window**(500kb of coverage on each side of the gene). Finally, using **parallel processing (BiocParallel)**, it iterates through every remaining gene to create thousands of highly **localized PLINK file sets** (BED/BIM/FAM). In this crucial step, the gene's cleaned expression vector is saved as the phenotype in the .fam file, while the genotypes are subsetted to contain only the local SNPs, producing the required input format for building gene expression weight models.The outputs are in separate gene window subdirectories in `{subregion}_gene/bim_files/{subregion}_gene_{1:n gene windows}`.
+Outputs: Thousands of independent gene subdirectories stored in {subregion}_gene/bim_files/ containing localized PLINK inputs with expression residuals designated as the phenotype.
 
 ```
-# We should run :
 sh 2_build_bims_Amygdala_gene.sh
 # and/or
 sh 2_build_bims_sACC_gene.sh
-# which will running 2_build_bims.R
-
 ```
 
-## 3) Compute TWAS Weights individually
+## 3) Compute Local Expression Weights
 
-Here, we make use of Gusev et al's `FUSION.compute_weights.R` script [[2](#references)], which produces expression weights one gene at a time, taking in the above `build_bims.R` output. The flags are customizable and allow the user to specify multiple different models for testing. We set the heritability score P-value threshold to above `1` so heritability is not filtered. The output for this script can be found in `{subregion}_gene/out_files/gene_{1:n gene windows}`.
+Executes the core FUSION weight computation pipeline (FUSION.compute_weights.R) to model cis-eQTL genetic architectures [1]. The heritability $P$-value threshold is set to 1 to prevent aggressive filtering of low-heritability features at early stages.
 
-Because of limitation on SLURUM system, first by running bash script :
+- **Note on Cluster Scheduling** : Due to SLURM step limitations, individual batch arrays are dynamically chunked to execute smoothly.
 ```
+# Step 3.0: Preprocess and split the gene catalog into batches
 sh 3_0_preprocess_compute_weights_indv_Amygdala_full_gene_.sh 
-and/or 
 sh 3_0_preprocess_compute_weights_indv_sACC_full_gene_.sh
-```
-split the list of genes into smaller batches for parallel cluster submission, and create necessary symbolic links to define the input and output paths expected by the downstream FUSION TWAS software.
 
-Then, using SLURM array scripts mentioned belowe automates the parallel computation of gene expression weights for 4,500 individual genes in the Amygdala region by dynamically loading each gene's localized PLINK data and executing the FUSION TWAS R script with four different statistical models (Top1, BLUP, LASSO, Enet). 
+# Step 3.1: Submit SLURM job arrays across the generated blocks
+sbatch 3_compute_weights_indv_Amygdala_full_gene_1.sh # through 6
+sbatch 3_compute_weights_indv_sACC_full_gene_1.sh     # through 6
 
-```
-sbatch 3_compute_weights_indv_Amygdala_full_gene_1.sh to
-sbatch 3_compute_weights_indv_Amygdala_full_gene_6.sh 
-and/or 
-sbatch 3_compute_weights_indv_sACC_full_gene_1.sh to
-sbatch 3_compute_weights_indv_sACC_full_gene_6.sh
 ```
 
 ## 4) Merge Individual TWAS gene weights
