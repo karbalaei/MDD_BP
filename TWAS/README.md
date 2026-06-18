@@ -74,28 +74,25 @@ sbatch compute_weights_sACC_gene.sh
 ```
 
 
-## 5) Process hg38 GWAS
+## 5) Process hg38 GWAS Summary Statistics
 
-The GWAS file has already been converted to hg38, but requires some additional processing, such as the calculation of Z-score for each SNP and removal of unnecessary columns. Two histograms representing the frequency of Z-scores and log odds ratio are generated as well.
-
+Standardizes external GWAS files mapped to the hg38 reference genome. This calculates uniform $Z$-scores across all represented variants, filters out incompatible or missing columns, and generates diagnostic metrics (e.g., $Z$-score and log odds ratio frequency distributions).
 ```
 sbatch run_process-gwas.sh
 ```
 
 
-## 6) Apply Weights
-
-The weights generated in step #4 are used to perform expression imputation. `FUSION.assoc_test.R` is called, followed by `FUSION.post_process.R`, which conducts joint/conditional tests and produces corresponding plots. See more [here](http://gusevlab.org/projects/fusion/#typical-analysis-and-output) and [here](http://gusevlab.org/projects/fusion/#jointconditional-tests-and-plots).
-
+## 6) Apply Weights (Imputation & Association)
+Performs expression imputation and calculates trait associations using FUSION.assoc_test.R. Downstream dependencies trigger FUSION.post_process.R to run joint/conditional tests across regions with dense signals, helping distinguish independent eQTL effects from passenger correlations.
 ```
 sh apply_weights.sh
 ```
 
 
-## 7) TWAS results into a single Rdata file
+## 7) Aggregate Regional TWAS Output
+Harvests all calculated association outputs across both the ```sACC``` and ```amygdala``` analytical arms, formatting and consolidating them into an evaluation archive.
 
-All of the TWAS results from both the sACC and amygdala subregions are combined into a single Rdata file that is used for downstream analysis.
-
+- **Outputs** : Comprehensive summary database in ```.Rdata``` format.
 ```
 sbatch run_read_twas_amygdala.sh
 # and/or
