@@ -56,7 +56,7 @@ Click the links below to access the code, documentation, and specific results fo
 * [**Gene-Set Enrichment:**](/Gene_set_enrichmnet) Functional enrichment and pathway mapping of identified DEFs.
 * [**Fusion-TWAS:**](TWAS) Transcriptome-Wide Association Studies integrating GWAS summary statistics with reference expression weights.
 * [**IsoTWAS:**](isoTWAS) Isoform-specific TWAS evaluations focusing on isoform-specific expression (ISE) and tissue-specific regulation.
-* [**Leafcutter](Leafcutter) Splicing Analysis:** Annotation-free quantification of RNA splicing variation focusing explicitly on intron usage across samples.
+* [**Leafcutter Splicing Analysis:**](Leafcutter) Annotation-free quantification of RNA splicing variation focusing explicitly on intron usage across samples.
 
 ---
 
