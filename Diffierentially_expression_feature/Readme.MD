@@ -46,7 +46,7 @@ Acts as the central engine of the differential expression framework. The script 
 * **Junction-Level Resolution:** Quantifies absolute count boundaries at splicing coordinates to record active splice variations.
 
 
-* **Transcript-Level Resolution (Isoform):** Investigates precise full-length transcript usage matrices evaluated via TPM log transformations ($log_2(\text{TPM} + 1)$) rather than raw counts.
+* **Transcript-Level Resolution (Isoform):** Investigates precise full-length transcript usage matrices evaluated via TPM log transformations ( $log_2(\text{TPM} + 1)$ ) rather than raw counts.
 
 
 
