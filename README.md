@@ -51,12 +51,12 @@ The structured analytical workflow implemented in this repository is outlined be
 
 Click the links below to access the code, documentation, and specific results for each step of the pipeline:
 
-* [**Differential Expression Analysis:**](Diffierentially_expression_feature) Identification of Differentially Expressed Features (**DEFs**) across genes, transcripts, exons, and junctions.
-* **WGCNA Network Analysis:** Construction of weighted gene co-expression networks to find highly correlated feature modules.
-* **Gene-Set Enrichment:** Functional enrichment and pathway mapping of identified DEFs.
-* **Fusion-TWAS:** Transcriptome-Wide Association Studies integrating GWAS summary statistics with reference expression weights.
-* **IsoTWAS:** Isoform-specific TWAS evaluations focusing on isoform-specific expression (ISE) and tissue-specific regulation.
-* **Leafcutter Splicing Analysis:** Annotation-free quantification of RNA splicing variation focusing explicitly on intron usage across samples.
+* [**Differential Expression Analysis:**](/Diffierentially_expression_feature) Identification of Differentially Expressed Features (**DEFs**) across genes, transcripts, exons, and junctions.
+* [**WGCNA Network Analysis:**](/WGCNA) Construction of weighted gene co-expression networks to find highly correlated feature modules.
+* [**Gene-Set Enrichment:**](/Gene_set_enrichmnet) Functional enrichment and pathway mapping of identified DEFs.
+* [**Fusion-TWAS:**](TWAS) Transcriptome-Wide Association Studies integrating GWAS summary statistics with reference expression weights.
+* [**IsoTWAS:**](isoTWAS) Isoform-specific TWAS evaluations focusing on isoform-specific expression (ISE) and tissue-specific regulation.
+* [**Leafcutter](Leafcutter) Splicing Analysis:** Annotation-free quantification of RNA splicing variation focusing explicitly on intron usage across samples.
 
 ---
 
