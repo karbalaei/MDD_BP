@@ -55,7 +55,8 @@ sh 3_0_preprocess_compute_weights_indv_sACC_full_gene_.sh
 ```
 split the list of genes into smaller batches for parallel cluster submission, and create necessary symbolic links to define the input and output paths expected by the downstream FUSION TWAS software.
 
-Then, using SLURM array scripts:
+Then, using SLURM array scripts mentioned belowe automates the parallel computation of gene expression weights for 4,500 individual genes in the Amygdala region by dynamically loading each gene's localized PLINK data and executing the FUSION TWAS R script with four different statistical models (Top1, BLUP, LASSO, Enet). 
+
 ```
 sbatch 3_compute_weights_indv_Amygdala_full_gene_1.sh to
 sbatch 3_compute_weights_indv_Amygdala_full_gene_6.sh 
@@ -64,45 +65,54 @@ sbatch 3_compute_weights_indv_sACC_full_gene_1.sh to
 sbatch 3_compute_weights_indv_sACC_full_gene_6.sh
 ```
 
-automates the parallel computation of gene expression weights for 4,500 individual genes in the Amygdala region by dynamically loading each gene's localized PLINK data and executing the FUSION TWAS R script with four different statistical models (Top1, BLUP, LASSO, Enet). 
 ## 4) Merge Individual TWAS gene weights
+
+The results from step #3 are merged together by generating an index `pos_info.Rdata`. `FUSION.profile_wgt.R` from Gusev et al.'s TWAS workflow is also called to produce a per-gene profile with summary of the data and model performance in `{subregion}_gene.profile.err`.
+
 ```
 sbatch compute_weights_Amygdala_gene.sh
 # and/or
 sbatch compute_weights_sACC_gene.sh
 ```
 
-The results from step #3 are merged together by generating an index `pos_info.Rdata`. `FUSION.profile_wgt.R` from Gusev et al.'s TWAS workflow is also called to produce a per-gene profile with summary of the data and model performance in `{subregion}_gene.profile.err`.
 
 ## 5) Process hg38 GWAS
+
+The GWAS file has already been converted to hg38, but requires some additional processing, such as the calculation of Z-score for each SNP and removal of unnecessary columns. Two histograms representing the frequency of Z-scores and log odds ratio are generated as well.
+
 ```
 sbatch run_process-gwas.sh
 ```
 
-The GWAS file has already been converted to hg38, but requires some additional processing, such as the calculation of Z-score for each SNP and removal of unnecessary columns. Two histograms representing the frequency of Z-scores and log odds ratio are generated as well.
 
 ## 6) Apply Weights
+
+The weights generated in step #4 are used to perform expression imputation. `FUSION.assoc_test.R` is called, followed by `FUSION.post_process.R`, which conducts joint/conditional tests and produces corresponding plots. See more [here](http://gusevlab.org/projects/fusion/#typical-analysis-and-output) and [here](http://gusevlab.org/projects/fusion/#jointconditional-tests-and-plots).
+
 ```
 sh apply_weights.sh
 ```
 
-The weights generated in step #4 are used to perform expression imputation. `FUSION.assoc_test.R` is called, followed by `FUSION.post_process.R`, which conducts joint/conditional tests and produces corresponding plots. See more [here](http://gusevlab.org/projects/fusion/#typical-analysis-and-output) and [here](http://gusevlab.org/projects/fusion/#jointconditional-tests-and-plots).
 
 ## 7) TWAS results into a single Rdata file
+
+All of the TWAS results from both the sACC and amygdala subregions are combined into a single Rdata file that is used for downstream analysis.
+
 ```
 sbatch run_read_twas_amygdala.sh
 # and/or
 sbatch run_read_twas_sacc.sh
 ```
 
-All of the TWAS results from both the sACC and amygdala subregions are combined into a single Rdata file that is used for downstream analysis.
 
 ## 8) TWAS plot generation
+
+This script generates a number of different plots and outputs their corresponding tables into `analysis/plots/` and `analysis/tables/`, respectively.
+
 ```
 sbatch run_generate_twas_plots.sh
 ```
 
-This script generates a number of different plots and outputs their corresponding tables into `analysis/plots/` and `analysis/tables/`, respectively.
 
 ## References
 1. Gusev, A., Ko, A., Shi, H., Bhatia, G., Chung, W., Penninx, B.W., Jansen, R., De Geus, E.J., Boomsma, D.I., Wright, F.A. and Sullivan, P.F., 2016. Integrative approaches for large-scale transcriptome-wide association studies. Nature genetics, 48(3), pp.245-252. https://www.nature.com/articles/ng.3506
