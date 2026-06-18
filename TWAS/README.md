@@ -25,6 +25,7 @@ The first step is the  processes gene expression (RNA-seq) data, subsetting it t
 sbatch 1_filter_snps_amygdala_gene.sh
 # and/or
 sbatch 1_filter_snps_sacc_gene.sh
+# which will running 1_filter_snps_gene.R
 ```
 
 
