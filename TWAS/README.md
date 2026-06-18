@@ -37,9 +37,9 @@ sbatch 1_filter_snps_sacc_gene.sh
 
 
 ## 2) Build Gene-Level PLINK Files
-Prepares localized window boundaries for FUSION. This script uses a linear model to regress out known covariates (sex, population structure PCs, expression PCs) to yield "cleaned expression" residuals. It then applies a structural spatial filter, capturing all SNPs within a 1 Mb cis-regulatory window (500 kb upstream/downstream of the gene body) using parallel processing (BiocParallel).
+Prepares localized window boundaries for FUSION. This script uses a linear model to regress out known covariates (sex, population structure PCs, expression PCs) to yield "cleaned expression" residuals. It then applies a structural spatial filter, capturing all SNPs within a **1 Mb cis-regulatory window** (500 kb upstream/downstream of the gene body) using parallel processing (`BiocParallel`).
 
-- **Outputs** : Thousands of independent gene subdirectories stored in {subregion}_gene/bim_files/ containing localized PLINK inputs with expression residuals designated as the phenotype.
+- **Outputs** : Thousands of independent gene subdirectories stored in `{subregion}_gene/bim_files/` containing localized PLINK inputs with expression residuals designated as the phenotype.
 
 ```
 sh 2_build_bims_Amygdala_gene.sh
@@ -83,16 +83,18 @@ sbatch run_process-gwas.sh
 
 
 ## 6) Apply Weights (Imputation & Association)
+
 Performs expression imputation and calculates trait associations using FUSION.assoc_test.R. Downstream dependencies trigger FUSION.post_process.R to run joint/conditional tests across regions with dense signals, helping distinguish independent eQTL effects from passenger correlations.
+
 ```
 sh apply_weights.sh
 ```
 
 
 ## 7) Aggregate Regional TWAS Output
-Harvests all calculated association outputs across both the ```sACC``` and ```amygdala``` analytical arms, formatting and consolidating them into an evaluation archive.
+Harvests all calculated association outputs across both the `sACC` and `amygdala` analytical arms, formatting and consolidating them into an evaluation archive.
 
-- **Outputs** : Comprehensive summary database in ```.Rdata``` format.
+- **Outputs** : Comprehensive summary database in `.Rdata` format.
 ```
 sbatch run_read_twas_amygdala.sh
 # and/or
@@ -100,9 +102,10 @@ sbatch run_read_twas_sacc.sh
 ```
 
 
-## 8) TWAS plot generation
+## 8) Diagnostic Plotting & Visualization
+Generates standard multi-omic overview plots, regional association charts, and summary matrices.
 
-This script generates a number of different plots and outputs their corresponding tables into `analysis/plots/` and `analysis/tables/`, respectively.
+Outputs: Rendered graphics and statistics mapped directly to `analysis/plots/` and `analysis/tables/`.
 
 ```
 sbatch run_generate_twas_plots.sh
