@@ -1,7 +1,12 @@
-# MDD vs. BP TWAS Workflow
-This directory contains the computational workflow for the summary-TWAS (Transcriptome-Wide Association Study) conducted on MDD, BD, and control samples from the sACC (subgenual anterior cingulate cortex) and amygdala, as part of the broader MDD vs. BP (Bipolar Disorder) RNA-Seq project. 
+# 🧬 What is isoTWAS?
 
-Specifically, this workflow details the procedures used to generate TWAS results for both the amygdala and sACC tissues by leveraging the following public resources: the Bipolar Disorder GWAS data published by the Psychiatric Genomics Consortium (PGC) [[1](#references)], and the Bipolar Disorder GWAS data provided by 23andMe [[1](#references)].
+- **The Concept**: Traditional TWAS evaluates associations at the aggregate gene level, which can obscure critical disease mechanisms. **isoTWAS** extends this framework by shifting the resolution to **isoform-specific expression (ISE)** and transcript-level features. This approach is uniquely powerful for distinguishing complex psychiatric conditions like MDD and BP, where alternative splicing and variable transcript usage often drive pathobiology even when total gene-level expression remains unchanged.
+
+- **Prediction Models** : Similar to gene-level frameworks, isoTWAS trains predictive models (such as Elastic Net, LASSO, and Blended architectures) to estimate the genetically regulated component of expression—but does so independently for individual transcripts or isoforms.
+
+- **Association Step**: By integrating transcript-specific predictive weights ($\mathbf{w}$) with major GWAS summary statistics (e.g., PGC or 23andMe) and an LD reference panel, isoTWAS computes isoform-level association $Z$-scores. This identifies specific transcript variations that are significantly correlated with phenotypic risk, allowing for high-resolution molecular mapping.
+
+🛠️ MDD vs. BP isoTWAS WorkflowFollow the sequential steps below to execute the transcript-level pipeline: [[1](#references)].
 
 ## 1) Filter SNPs
 
