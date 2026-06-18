@@ -23,7 +23,69 @@ sbatch 1_filter_snps_sacc_gene.sh
 ```
 The script first processes gene expression (RNA-seq) data, subsetting it to the chosen brain region, calculating RPKM (Reads Per Kilobase Million), and using Principal Component Analysis (PCA) and the sva package to estimate and correct for major confounding factors (Gene PCs), storing the processed expression data. Simultaneously, it uses the common samples to subset the raw genotype data (in PLINK format), extracts the relevant samples, and crucially, ensures that all Single Nucleotide Polymorphism (SNP) identifiers are unique by modifying and overwriting the PLINK .bim file. The final output is a set of carefully matched and corrected gene expression and genotype files (`.bed`, `.fam` and `.bim` files), ready for downstream TWAS modeling.
 
-## 2) Build gene-level PLINK .bed files
+## 2) Build Isoform Expression Matrices & Target Gene Catalogs (`2_build_expression_matrix.R`)
+
+Constructs the core transcript expression architectures required for downstream modeling. The script dynamically imports the localized sample expression data (`rse_tx`) alongside pre-calculated Transcript PCs. Confounding variations—including diagnostic status (`PrimaryDx`), genetic ancestry (`snpPCs`), sex, and transcript-level batch effects—are rigorously controlled using a linear framework via `jaffelab::cleaningY` to isolate **"clean expression" residuals**.
+
+To maximize analytical power, the workflow loads prior gene-level heritability files from the companion TWAS analysis, filtering out feature windows that lack statistical significance ($P > 0.05$ or $h^2 \le 0$). It isolates genes possessing **multiple distinct transcript isoforms** ($n > 1$) and maps them against the significance index.
+
+- **Outputs:** A clean, standardized transcript-level expression matrix saved to `expression_matrix.rda` alongside subregion-specific batch maps (`gene_list_isotwas_{region}.txt`) containing chromosome coordinates and gene indexes for distributed cluster scheduling.
+
+```bash
+# Run to generate matrices:
+Rscript 2_build_expression_matrix.R --region Amygdala
+# and/or
+Rscript 2_build_expression_matrix.R --region sACC
+
+```
+
+---
+
+### 3) Compute Distributed Isoform Weights via Distributed Array Jobs (`3_compute_isotwas_*.sh`)
+
+Automates high-throughput parallel computation of isoform-specific genetic prediction models across thousands of features using the SLURM workload manager. The shell wrappers read the target gene catalogs compiled in Step 2, parse the row indexes corresponding to the active `SLURM_ARRAY_TASK_ID`, and spawn dedicated `Rscript Compute_isotwas.R` threads. Each task dynamically invokes predictive regularized modeling algorithms to build custom genetic weights for every transcript variant within the locus.
+
+* **Outputs:** Independent, localized transcript-level predictive weight models mapped across $6,499$ arrays for the Amygdala and $7,100$ arrays for the sACC.
+
+```bash
+# Submit highly parallelized job arrays to the cluster:
+sbatch 3_compute_isotwas_Amygdala.sh
+# and/or
+sbatch 3_compute_isotwas_sACC.sh
+
+```
+
+---
+
+### 4) Construct Reference Linkage Disequilibrium Matrices (`4_create_LD_matrix.R`)
+
+Generates structural linkage disequilibrium (LD) covariance references across the genome using raw European reference panels from the 1000 Genomes Project (`1000G.EUR.*.bed`). The pipeline systematically iterates through all autosomes (Chromosomes 1–22), mapping the genotype markers using `bigsnpr::snp_readBed2` and evaluating absolute correlation matrices via `bigsnpr::snp_cor`. Variant identifiers are synchronized across rows and columns using unique marker IDs to allow seamless lookup during the final association steps.
+
+* **Outputs:** 22 autosome-specific covariance matrices saved to `isotwas/LD_matrix/chromosome_{1:22}.rds`, supplying the necessary linkage framework to compute isoform-level association $Z$-scores with external GWAS summary statistics.
+
+```bash
+# Build background LD covariance layers:
+Rscript 4_create_LD_matrix.R
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 sh 2_build_bims_Amygdala_gene.sh
 # and/or
