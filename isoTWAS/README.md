@@ -1,16 +1,20 @@
 # 🧬 What is isoTWAS?
 
-- **The Concept**: Traditional TWAS evaluates associations at the aggregate gene level, which can obscure critical disease mechanisms. **isoTWAS** extends this framework by shifting the resolution to **isoform-specific expression (ISE)** and transcript-level features[[1](#references)]. This approach is uniquely powerful for distinguishing complex psychiatric conditions like MDD and BP, where alternative splicing and variable transcript usage often drive pathobiology even when total gene-level expression remains unchanged.
+- **The Concept**: Traditional TWAS evaluates associations at the aggregate gene level, which can obscure critical disease mechanisms. **isoTWAS** extends this framework by shifting the resolution to **isoform-specific expression (ISE)** and transcript-level features[[1](#references)]. This approach is uniquely powerful for distinguishing complex psychiatric conditions like MDD and BP, where alternative splicing and variable transcript usage often drive pathobiology even when total gene-level expression remains unchanged[[2](#references)].
 
-- **Prediction Models** : Similar to gene-level frameworks, isoTWAS trains predictive models (such as Elastic Net, LASSO, and Blended architectures) to estimate the genetically regulated component of expression—but does so independently for individual transcripts or isoforms.
+- **Prediction Models** : Similar to gene-level frameworks, isoTWAS trains predictive models (such as Elastic Net, LASSO, and Blended architectures) to estimate the genetically regulated component of expression—but does so independently for individual transcripts or isoforms[[1](#references)].
 
-- **Association Step**: By integrating transcript-specific predictive weights ($\mathbf{w}$) with major GWAS summary statistics (e.g., PGC or 23andMe) and an LD reference panel, isoTWAS computes isoform-level association $Z$-scores. This identifies specific transcript variations that are significantly correlated with phenotypic risk, allowing for high-resolution molecular mapping.
+- **Association Step**: By integrating transcript-specific predictive weights ($\mathbf{w}$) with major GWAS summary statistics (e.g., PGC or 23andMe) and an LD reference panel, isoTWAS computes isoform-level association $Z$-scores[[1](#references)]. This identifies specific transcript variations that are significantly correlated with phenotypic risk, allowing for high-resolution molecular mapping[[1 و 2](#references)].
 
 ## 🛠️ MDD vs. BP isoTWAS Workflow
 
-Follow the sequential steps below to execute the transcript-level pipeline: [[1](#references)].
+Follow the sequential steps below to execute the transcript-level pipeline:.
 
-## 1) Filter SNPs
+## 1) Filter SNPs & Process Transcripts (`1_filter_snps_isotwast.R`)
+
+Extracts and harmonizes the discovery transcriptomic and genotypic datasets for the chosen brain region (Amygdala or sACC). The script subsets the transcript-level expression data (`rse_tx`), filters for samples present in both the RNA-Seq and genotype cohorts, and calculates Transcript **Principal Components (PCs)** using log-transformed TPM data ($log_2(\text{tpm} + 1)$). The optimal number of hidden confounding factors to retain is determined dynamically via Surrogate Variable Analysis (`sva::num.sv`).Simultaneously, the script utilizes PLINK to isolate the corresponding sample genotypes under strict biallelic constraints (`--biallelic-only`). To protect downstream predictive modeling from pipeline crashes, it scans the genotypic data and systematically forces non-unique variant markers to become unique.
+
+- **Outputs**: Cleaned transcript-level expression profiles (`rse_tx` containing estimated Transcript PCs) and matched, deduplicated PLINK binary genotype files (`.bed`, `.fam`, and `.bim`) formatted specifically for localized isoTWAS weight training.
 
 ```
 sbatch 1_filter_snps_amygdala_gene.sh
