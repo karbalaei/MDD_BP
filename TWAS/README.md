@@ -22,6 +22,7 @@ Specifically, this workflow details the procedures used to generate TWAS results
 The first step is the  processes gene expression (RNA-seq) data, subsetting it to the chosen brain region, calculating RPKM (Reads Per Kilobase Million), and using Principal Component Analysis (PCA) and the sva package to estimate and correct for major confounding factors (Gene PCs), storing the processed expression data. Simultaneously, it uses the common samples to subset the raw genotype data (in PLINK format), extracts the relevant samples, and crucially, ensures that all Single Nucleotide Polymorphism (SNP) identifiers are unique by modifying and overwriting the PLINK .bim file. The final output is a set of carefully matched and corrected gene expression and genotype files (`.bed`, `.fam` and `.bim` files), ready for downstream TWAS modeling.
 
 ```
+# We should run :
 sbatch 1_filter_snps_amygdala_gene.sh
 # and/or
 sbatch 1_filter_snps_sacc_gene.sh
@@ -30,12 +31,17 @@ sbatch 1_filter_snps_sacc_gene.sh
 
 
 ## 2) Build gene-level PLINK .bed files
+
+In this step the input files for the FUSION software is prepares. It first loads the previously processed gene expression data for a user-specified brain region, then applies a rigorous cleaning step using a linear model to regress out the effects of known and estimated confounders (like sex, population structure PCs, and expression PCs), resulting in **"cleaned expression" residuals**. Next, the script spatially filters the genes, keeping only those with at least **one SNP within a 1 Mb window**(500kb of coverage on each side of the gene). Finally, using **parallel processing (BiocParallel)**, it iterates through every remaining gene to create thousands of highly **localized PLINK file sets** (BED/BIM/FAM). In this crucial step, the gene's cleaned expression vector is saved as the phenotype in the .fam file, while the genotypes are subsetted to contain only the local SNPs, producing the required input format for building gene expression weight models.The outputs are in separate gene window subdirectories in `{subregion}_gene/bim_files/{subregion}_gene_{1:n gene windows}`.
+
 ```
+# We should run :
 sh 2_build_bims_Amygdala_gene.sh
 # and/or
 sh 2_build_bims_sACC_gene.sh
+# which will running 2_build_bims.R
+
 ```
-This script is the second critical phase of a Transcriptome-Wide Association Study (TWAS) pipeline and prepares the input files for the FUSION software. It first loads the previously processed gene expression data for a user-specified brain region, then applies a rigorous cleaning step using a linear model to regress out the effects of known and estimated confounders (like sex, population structure PCs, and expression PCs), resulting in **"cleaned expression" residuals**. Next, the script spatially filters the genes, keeping only those with at least **one SNP within a 1 Mb window**(500kb of coverage on each side of the gene). Finally, using **parallel processing (BiocParallel)**, it iterates through every remaining gene to create thousands of highly **localized PLINK file sets** (BED/BIM/FAM). In this crucial step, the gene's cleaned expression vector is saved as the phenotype in the .fam file, while the genotypes are subsetted to contain only the local SNPs, producing the required input format for building gene expression weight models.The outputs are in separate gene window subdirectories in `{subregion}_gene/bim_files/{subregion}_gene_{1:n gene windows}`.
 
 ## 3) Compute TWAS Weights individually
 
