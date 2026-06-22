@@ -1,4 +1,4 @@
-# Leafcutter Alternative Splicing Analysis Pipeline (Steps 1–4)
+# Leafcutter Alternative Splicing Analysis Pipeline 
 
 This directory contains the computational pipeline for conducting annotation-free **Differential Splicing (DS)** analysis between Major Depressive Disorder (MDD) and Bipolar Disorder (BP) cohorts using Leafcutter. Instead of relying on full-length transcript reconstructions, Leafcutter estimates alternative splicing variations by quantifying **intron excision clusters** directly from RNA-Seq split-read mappings across the **amygdala** and **subgenual anterior cingulate cortex (sgACC)**.
 

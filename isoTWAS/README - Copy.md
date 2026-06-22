@@ -72,12 +72,10 @@ Rscript 4_create_LD_matrix.R
 
 ### 5) Format & Process hg38 GWAS Summary Statistics (`5_process_gwas_isotwas.R`)
 
-Standardizes and cleans the external trait summary statistics mapped to the hg38 genome reference block. This script specifically ingests:
+Standardizes and cleans external Psychiatric Genomics Consortium (PGC) and 23andMe major depression summary statistics mapped to the hg38 genome reference block. The script enforces a rigorous column layout, re-indexes variant identifiers against the unique project `.bim` coordinates generated in Step 1, and back-calculates missing statistical parameters. Specifically, it derives uniform alignment $Z$-scores from log odds ratios and standard errors ($Z = \frac{\text{LogOR}}{\text{StdErrLogOR}}$) and estimates effective sample sizes ($N$) dynamically per variant using minor allele frequencies.
 
-1. MDD: `PGC_UKB_depression_genome-wide_hg38`[[3](#references)]
-2. BP: `bip2024_multianc_no23andMe`[[4,5](#references)]
+* **Outputs:** A highly optimized, chromosome-annotated genomic file saved as `PGC_UKB_23andMe_depression_genome-wide_isotwas_hg38_ver2.txt` ready for cross-referencing.
 
-It enforces a rigorous column layout, re-indexes variant identifiers against the unique project .bim coordinates generated in Step 1, and back-calculates missing statistical parameters. Specifically, it derives uniform alignment $Z$-scores from log odds ratios and standard errors ($Z = \frac{\text{LogOR}}{\text{StdErrLogOR}}$) and estimates effective sample sizes ($N$) dynamically per variant using minor allele frequencies.Outputs: Highly optimized, chromosome-annotated genomic files ready for cross-referencing (e.g., `PGC_UKB_depression_genome-wide_isotwas_hg38.txt` and `bip2024_multianc_isotwas_hg38.txt`).
 ```bash
 # Process and standardize the trait summary statistics:
 Rscript 5_process_gwas_isotwas.R
@@ -125,10 +123,3 @@ Rscript 7_FDR_calculaton_isotwas.R --region "sACC" --diag "MDD"
 1- Bhattacharya, A. et al. (2022) 'isoTWAS: Transcript-level transcriptome-wide association studies via structured lasso and blended learning', Genetics, 222(4), p.iyac145. doi:10.1093/genetics/iyac145.
 
 2- Gandal, M. J. et al. (2018) 'Transcriptome-wide isoforms-level imbalances in the brains of individuals with severe mental illnesses', Science, 362(6420), p.eaat8127. doi:10.1126/science.aat8127.
-
-3- O’Connell, K.S., Koromina, M., van der Veen, T., Boltz, T., David, F.S., Yang, J.M.K., Lin, K.H., Wang, X., Coleman, J.R., Mitchell, B.L. and McGrouther, C.C., 2025. Genomics yields biological and phenotypic insights into bipolar disorder. Nature, 639(8056), pp.968-975. https://www.nature.com/articles/s41586-024-08468-9  
-
-4- Sullivan P. bip2024. Version 2. Figshare; 2024. Available from: https://doi.org/10.6084/m9.figshare.27216117.v2
-
-5- Wray, N. R., Ripke, S., Mattheisen, M., Trzaskowski, M., Byrne, E. M., Abdellaoui, A., ... & Sullivan, P. F. (2018). Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression. Nature Genetics, 50(5), 668–681. doi.org
-

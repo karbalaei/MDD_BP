@@ -1,6 +1,7 @@
 # Transcriptome-Wide Association Studies (TWAS) Pipeline
 
 This directory contains the computational workflow for the summary-based Transcriptome-Wide Association Study (TWAS) conducted on Bipolar Disorder (BP) and Major Depressive Disorder (MDD) cohorts. This analysis utilizes RNA-Seq expression profiles from two critical brain regions—the **amygdala** and the **subgenual anterior cingulate cortex (sgACC)**—to identify genetically regulated gene expression variations associated with these mood disorders.
+
 ---
 
 ## 🧬 What is FUSION-TWAS?
@@ -20,9 +21,8 @@ This directory contains the computational workflow for the summary-based Transcr
 
 ## 🛠️ MDD vs. BP TWAS Workflow
 
-This workflow processes local RNA-Seq datasets alongside public-facing genetic datasets. Specifically, this analysis leverages two primary GWAS summary statistics:
-1. **Major Depressive Disorder (MDD):** `PGC_UKB_depression_genome-wide_hg38` [[5](#references)]
-2. **Bipolar Disorder (BP):** `bip2024_multianc_no23andMe` [[2,4](#references)]
+This workflow processes local RNA-Seq datasets alongside public-facing genetic datasets, leveraging the Bipolar Disorder and MDD GWAS summary data from the Psychiatric Genomics Consortium (PGC) and 23andMe meta-analyses [[2](#references)].
+
 Follow the sequential steps below to execute the pipeline:
 
 ### 1) Filter SNPs & Match Formats
@@ -86,7 +86,8 @@ sbatch compute_weights_sACC_gene.sh
 
 ## 5) Process hg38 GWAS Summary Statistics
 
-Standardizes the external GWAS files (`PGC_UKB_depression_genome-wide_hg38` for MDD and `bip2024_multianc_no23andMe` for BP ) mapped to the hg38 reference genome. This calculates uniform $Z$-scores across all represented variants, filters out incompatible or missing columns, and generates diagnostic metrics (e.g., $Z$-score and log odds ratio frequency distributions).
+Standardizes external GWAS files mapped to the hg38 reference genome. This calculates uniform $Z$-scores across all represented variants, filters out incompatible or missing columns, and generates diagnostic metrics (e.g., $Z$-score and log odds ratio frequency distributions).
+
 ```
 sbatch run_process-gwas.sh
 ```
@@ -134,5 +135,3 @@ sbatch run_generate_twas_plots.sh
 1. Gusev, A., Ko, A., Shi, H., Bhatia, G., Chung, W., Penninx, B.W., Jansen, R., De Geus, E.J., Boomsma, D.I., Wright, F.A. and Sullivan, P.F., 2016. Integrative approaches for large-scale transcriptome-wide association studies. Nature genetics, 48(3), pp.245-252. https://www.nature.com/articles/ng.3506
 2. O’Connell, K.S., Koromina, M., van der Veen, T., Boltz, T., David, F.S., Yang, J.M.K., Lin, K.H., Wang, X., Coleman, J.R., Mitchell, B.L. and McGrouther, C.C., 2025. Genomics yields biological and phenotypic insights into bipolar disorder. Nature, 639(8056), pp.968-975. https://www.nature.com/articles/s41586-024-08468-9  
 3. Yu G, Wang L, Han Y, He Q (2012). “clusterProfiler: an R package for comparing biological themes among gene clusters.” OMICS: A Journal of Integrative Biology, 16(5), 284-287. doi: 10.1089/omi.2011.0118.
-4. Sullivan P. bip2024. Version 2. Figshare; 2024. Available from: https://doi.org/10.6084/m9.figshare.27216117.v2
-5. Wray, N. R., Ripke, S., Mattheisen, M., Trzaskowski, M., Byrne, E. M., Abdellaoui, A., ... & Sullivan, P. F. (2018). Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression. Nature Genetics, 50(5), 668–681. doi.org
